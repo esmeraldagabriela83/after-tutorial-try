@@ -69,7 +69,8 @@ h1::after{
 
 h1:hover::before,
 h1:hover::after{
-    width: 1088px;
+    /*width: 1088px;*/
+    width: 100%;
 }
 /*after and after hover effect*/
 
@@ -212,7 +213,7 @@ padding: 0 1em;
     }
 
     .logo{
-        margin-left: 1.5em;
+        margin-left: 0;
         font-weight: bold;
         font-size: 1.5em;
     }
@@ -269,7 +270,86 @@ padding: 0 1em;
 
 
 
+
+
+
       /*content petInfoArticle*/
+
+.colHome .petHomeDrawing{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+/*Crimson
+#dc143c
+rgb(220, 20, 60)
+hsl(348, 83%, 47%)*/
+
+/*Olive
+#808000
+rgb(128, 128, 0)
+hsl(60, 100%, 25%)*/
+
+/*SkyBlue
+#87ceeb
+rgb(135, 206, 235)
+hsl(197, 71%, 73%)*/
+
+#catIllustrationInfo{
+    height: 15em;
+    width: 15em;
+    background-repeat: no-repeat;
+    background-image: url(../images/undraw_playful_cat_re_ac9g.svg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 1em;
+    background-color: rgba(135, 206, 235, 0.5);
+    /*border: 3px solid Olive;*/
+    box-shadow: 0.5px 0.5px 10px gray;
+}
+
+#catIllustrationInfo:hover{
+    background-color: rgba(128, 128, 0, 0.5);
+    transition: 0.5s;
+}
+
+#petIllustrationInfo{
+    height: 15em;
+    width: 15em;
+    background-repeat: no-repeat;
+    background-image: url(../images/undraw_friends_r511.svg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 1em;
+    background-color: rgba(135, 206, 235, 0.5);
+    /*border: 3px solid Olive;*/
+    box-shadow: 0.5px 0.5px 10px gray;
+}
+
+#petIllustrationInfo:hover{
+    background-color: rgba(128, 128, 0, 0.5);
+    transition: 0.5s;
+}
+
+#dogIllustrationInfo{
+    height: 15em;
+    width: 15em;
+    background-repeat: no-repeat;
+    background-image: url(../images/undraw_woman_mevk.svg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 1em;
+    background-color: rgba(135, 206, 235, 0.5);
+    /*border: 3px solid Olive;*/
+    box-shadow: 0.5px 0.5px 10px gray;
+}
+
+#dogIllustrationInfo:hover{
+    background-color: rgba(128, 128, 0, 0.5);
+    transition: 0.5s;
+}
 
 #petInfoParagraph{
     color:Maroon;
@@ -320,6 +400,38 @@ padding: 0 1em;
         letter-spacing: 0.1em;
     }
 
+    #catIllustrationInfo{
+        height: 13.5em;
+        width: 13.5em;
+        background-color: rgba(128, 128, 0,0.25);
+    }
+
+    #catIllustrationInfo:hover{
+        transition: 0.5s;
+        background-color: rgba(135, 206, 235, 0.25);
+    }
+
+    #petIllustrationInfo{
+        height: 13.5em;
+        width: 13.5em;
+        background-color: rgba(128, 128, 0,0.25);
+    }
+
+    #petIllustrationInfo:hover{
+        transition: 0.5s;
+        background-color: rgba(135, 206, 235, 0.25);
+    }
+
+    #dogIllustrationInfo{
+        height: 13.5em;
+        width: 13.5em;
+        background-color: rgba(128, 128, 0,0.25);
+    }
+
+    #dogIllustrationInfo:hover{
+        transition: 0.5s;
+        background-color: rgba(135, 206, 235, 0.25);
+    }
 }
 
 @media screen and (min-width: 960px) {
@@ -330,7 +442,7 @@ padding: 0 1em;
 
     .vl {
         border-left: 3px solid Olive;
-        height: 17em;
+        height: 35em;
     }
 
     .rowHome{
@@ -349,6 +461,99 @@ padding: 0 1em;
 }
 
         /*content petInfoArticle*/
+
+
+
+/*testimonials   content*/
+
+.ourFriends{
+    text-align: center;
+}
+
+#paragraph-home-friends{
+    color:Maroon;
+}
+
+.row-friends{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:1.5em;
+    height: auto;
+}
+
+.testimonial-col-home{
+    width: 20em;
+    height: auto;
+    margin: 0.7em;
+    background-color:rgba(220, 20, 60, 0.75);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1em;
+    box-shadow: 0.5px 0.5px 10px gray;
+}
+
+
+
+@media (min-width: 550px) and (max-width: 1088px){
+    .testimonial-col-home{
+        margin: 2.5em;
+    }
+}
+
+
+
+.testimonial-image{
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    background-size: cover;
+    margin-top: 1em;
+}
+
+.testimonial-image.user-1{
+background-image: url(https://images.unsplash.com/photo-1581456495146-65a71b2c8e52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80);
+}
+
+.testimonial-image.user-2{
+    background-image: url(https://images.unsplash.com/photo-1473830394358-91588751b241?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+}
+
+.testimonial-image.user-3{
+    background-image: url(https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+}
+
+.user-info h3{
+    color:white;
+}
+
+.user-info ion-icon{
+    color:white;
+    font-size: 1.5em;
+    padding: 0 0.5em;
+}
+
+/* media screen for footer  */
+@media screen and (max-width: 959px) {
+
+    .row-friends{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .testimonial-col-home{
+        margin: 1.5em;
+    }
+
+}
+
+/*testimonials   content*/
+
+
+
                                      /*footer*/
 footer{
     background-color: Olive;

@@ -65,7 +65,8 @@ h1::after{
 
 h1:hover::before,
 h1:hover::after{
-    width: 1088px;
+    /*width: 1088px;*/
+    width: 100%;
 }
 /*after and after hover effect*/
 
@@ -208,7 +209,7 @@ nav div.container{
     }
 
     .logo{
-        margin-left: 1.5em;
+        margin-left: 0;
         font-weight: bold;
         font-size: 1.5em;
     }

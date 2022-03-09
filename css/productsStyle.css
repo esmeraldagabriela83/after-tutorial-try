@@ -65,7 +65,8 @@ h1::after{
 
 h1:hover::before,
 h1:hover::after{
-    width: 1088px;
+    /*width: 1088px;*/
+   width:100%;
 }
 /*after and after hover effect*/
 
@@ -208,7 +209,7 @@ nav div.container{
     }
 
     .logo{
-        margin-left: 1.5em;
+        margin-left: 0;
         font-weight: bold;
         font-size: 1.5em;
     }
@@ -322,7 +323,7 @@ section.hero {
 
 
 
-/*content products page*/
+/*content main products page*/
 
 .textPhoto{
     width: 50%;
@@ -368,7 +369,12 @@ section#textPhotoProducts{
 .productLink{
     letter-spacing: 0.5em;
     display: flex;
-    align-items:flex-start;
+    align-items:center;
+    justify-content: center;
+    border:3px skyblue solid;
+    border-radius: 1em;
+    padding: 1em 0.5em;
+    box-shadow: 0.25px 0.25px 5px gray;
 }
 
 .paragraphAnimalProducts{
@@ -418,7 +424,106 @@ section#textPhotoProducts{
 
 
 
+/*content section products page*/
 
+
+
+
+/* content section animal lovers */
+.animalLovers{
+    /*border: 5px solid orange;*/
+    margin-top: -1.5em;
+}
+
+#paragraphProductsAnimalLovers{
+    color:Maroon;
+}
+
+.rowProducts{
+    margin: 0.5em 0.5em;
+}
+
+.colProducts{
+    border-radius: 1em;
+    box-shadow: 0.25px 0.25px 5px gray;
+    position: relative;
+    overflow: hidden;
+    margin: 1.7em 1.7em;
+}
+
+section.animalLovers .productsPetPhoto{
+    height: 15em;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+section.animalLovers .catLover{
+    background-image: url(https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1143&q=80);
+}
+
+section.animalLovers .petLover{
+    background-image: url(https://images.unsplash.com/photo-1545529468-42764ef8c85f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80);
+}
+
+section.animalLovers .dogLover{
+    background-image: url(https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+}
+/*Crimson
+#dc143c
+rgb(220, 20, 60)
+hsl(348, 83%, 47%)*/
+.layer{
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    transition: 0.5s;
+}
+
+.layer:hover{
+    background-color: rgba(220, 20, 60, 0.5);
+}
+
+.animalLovers .rowProducts .colProducts .layer h3{
+    width: 100%;
+    color:white;
+    letter-spacing: 0.5em;
+    text-shadow: 0.25px 0.25px 5px gray;
+    font-size: 1.5em;
+
+    bottom: 0;
+    left:50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity:0;
+    transition: 0.5s;
+}
+
+
+.animalLovers .rowProducts .colProducts .layer:hover h3{
+    bottom: 70%;
+    opacity: 1;
+}
+
+
+
+/* media screen for pet info  */
+@media screen and (min-width: 960px) {
+
+    .rowProducts{
+        display: flex;
+    }
+
+    .colProducts{
+        width: 33.33%;
+    }
+
+}
+/* content section animal lovers */
 
 
 /*footer*/
