@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <title>Cat Food</title>
-      <link href="../css/catFoodStyle.css" rel="stylesheet"/>
-  </head>
-  <body>
-<!--header-->
-    <header>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cat Food</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--ion-icons script-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!--ion-icons script-->
+
+  <link href="../css/catFoodStyle.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!--header-->
+  <header>
+
     <nav>
       <div class="container">
         <a href="../index.html" class="logo">
@@ -19,51 +29,210 @@
         </a>
         <ul class="menu">
           <li> <a href="../index.html">HOME</a></li>
-          <li> <a href="../catIndex.html"><div class="catSvg"></div></a></li>
-          <li> <a href="../dogIndex.html"><div class="dogSvg"></div></a></li>
+          <li> <a href="../catIndex.html">
+              <div class="catSvg"></div>
+            </a></li>
+          <li> <a href="../dogIndex.html">
+              <div class="dogSvg"></div>
+            </a></li>
 
           <li> <a href="index.html">PRODUCTS</a></li>
         </ul>
-        </div>
+
     </nav>
-    </header>
 
+    <!--https://www.youtube.com/watch?v=xekZXhumB0k-->
+    <!--How To Make A Website With Background Video Using HTML and CSS In Just 10 Minute-->
 
-<!--content-->
-    <main class="container">
+    <div class="hero">
+  <div class="transparency">
+      <iframe src="../images/cat-video.mp4" id="backVideo"></iframe>
 
-    <h1>cat food</h1>
+      <!-- <video controls id="backVideo>
+        <source src="../images/cat-video.mp4" type="video/mp4">
+      </video> -->
 
-    </main>
+      <div class="sidebar-cat-food">
+        <div class="text-box">
+          <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+        </div>
+      </div>
 
+      <div class="content-header-food-cat">
+        <h3>Lorem Ipsum is simply dummy text.</h3>
+        <div class="btn-cat-video" id="playBtn">
+          <ion-icon name="play-circle" id="icon"></ion-icon>
+          <p>cat video</p>
+        </div>
+      </div>
+</div>
+    </div>
+</div>
+  </header>
+
+  <!--content-->
+  <h1 class="container">cat food</h1>
+
+  <section id="cat-food-photo">
+    <div id="photo-index" class="container">
+
+      <div class="food-cat food-one"></div>
+      <div class="food-cat food-two"></div>
+      <div class="food-cat food-three"></div>
+
+    </div>
+  </section>
+<!--https://www.youtube.com/watch?v=rc50owRPdUI-->
+<!--How To Make A Website With Animated Text Effect Using HTML And CSS-->
+  <section class="container" id="animated-text-effect">
+    <h2>useful information</h2>
+    <ul>
+      <li>
+        <p>
+          <span>&#x21a3;</span>The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+        </p>
+      </li>
+      <li>
+        <p>
+          <span>&#x27F9;</span>The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+        </p>
+      </li>
+      <li>
+        <p>
+          <span>&#x2903;</span>The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+        </p>
+      </li>
+    </ul>
+
+    <ul>
+      <li>
+        <p>
+          <span>&#x2905;</span>The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+        </p>
+      </li>
+      <li>
+        <p>
+          <span>&#x21fe;</span>The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+        </p>
+      </li>
+      <li>
+        <p>
+          <span>&#x27F6;</span>The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+        </p>
+      </li>
+    </ul>
+  </section>
   <!--footer-->
 
-<footer>
-  <div class="container">
-    <h3 id="aboutFooter">about us</h3>
-    <p>
-      Contrary to popular belief, Lorem Ipsum is not simply random text.
-      It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. <br/>
-      Richard McClintock,
-      a Latin professor at Hampden-Sydney College in Virginia.
-    </p>
-    <div id="icons">
-      <div class="footerIcons"><a href="https://facebook.com/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></div>
-      <div class="footerIcons"><a href="https://instagram.com/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></div>
-      <div class="footerIcons"><a href="https://twitter.com/" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></div>
-    </div>
+  <footer>
+    <div class="container">
+      <!--    <h3 id="aboutFooter">about us</h3>-->
+      <h3 id="aboutFooter">
+        <a href="../about-us/index.html">About us</a>
+      </h3>
+      <p>
+        Contrary to popular belief, Lorem Ipsum is not simply random text.
+        It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. <br />
+        Richard McClintock,
+        a Latin professor at Hampden-Sydney College in Virginia.
+      </p>
+      <div id="icons">
+        <div class="footerIcons"><a href="https://facebook.com/" target="_blank">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a></div>
+        <div class="footerIcons"><a href="https://instagram.com/" target="_blank">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a></div>
+        <div class="footerIcons"><a href="https://twitter.com/" target="_blank">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a></div>
+      </div>
 
-    <!--sources links-->
-    <h3>sources</h3>
-    <div id="divSources">
-      <h5><a href="https://images.unsplash.com/photo-1623387641168-d9803ddd3f35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-             target="_blank">
-        https://images.unsplash.com/photo-1623387641168-d9803ddd3f35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
-      </a></h5>
-    </div>
-  </div>
-  <!--footer-->
-</footer>
+      <!--sources links-->
+      <h3 style="color:white">sources</h3>
+      <div id="divSources">
 
-  </body>
+        <h5><a href="https://www.pexels.com/video/video-of-a-tabby-cat-854982/" target="_blank">
+            https://www.pexels.com/
+            video/video-of-a-tabby
+            -cat-854982/
+          </a></h5>
+
+        <h5><a href="https://images.unsplash.com/photo-1494256997604-768d1f608cac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2129&q=80" target="_blank">
+            https://images.unsplash.com/photo
+            -1494256997604-768d1f608cac?ixlib=
+            rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by
+            1wYWdlfHx8fGVufDB8fHx8&auto=
+            format&fit=crop&w=2129&q=80
+          </a></h5>
+
+        <h5><a href="https://images.unsplash.com/photo-1616240133571-146fa869b7ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80" target="_blank">
+            https://images.unsplash.com/
+            photo-1616240133571-146fa869b7ce?ixlib=
+            rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by
+            1wYWdlfHx8fGVufDB8fHx8&auto=
+            format&fit=crop&w=1172&q=80
+          </a></h5>
+
+        <h5><a href="https://images.unsplash.com/photo-1605533914438-af2b1018b1b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80" target="_blank">
+            https://images.unsplash.com/photo
+            -1605533914438-af2b1018b1b7?ixlib=
+            rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by
+            1wYWdlfHx8fGVufDB8fHx8&auto=
+            format&fit=crop&w=1935&q=80
+          </a></h5>
+
+        <h5><a href="https://images.unsplash.com/photo-1601150098471-406cd38082fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" target="_blank">
+            https://images.unsplash.com/photo
+            -1601150098471-406cd38082fb?ixlib=
+            rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by
+            1wYWdlfHx8fGVufDB8fHx8&auto=
+            format&fit=crop&w=1170&q=80
+          </a></h5>
+
+        <h5><a href="https://images.unsplash.com/photo-1501820488136-72669149e0d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" target="_blank">
+            https://images.unsplash.com/photo
+            -1501820488136-72669149e0d4?ixlib=
+            rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90
+            by1wYWdlfHx8fGVufDB8fHx8&auto=
+            format&fit=crop&w=1170&q=80
+          </a></h5>
+
+        <h5><a href="https://images.unsplash.com/photo-1610080556749-7c63c435a8cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" target="_blank">
+            https://images.unsplash.com/photo
+            -1610080556749-7c63c435a8cf?ixlib
+            =rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90
+            by1wYWdlfHx8fGVufDB8fHx8&auto=
+            format&fit=crop&w=1170&q=80
+          </a></h5>
+
+          <h5><a href="https://www.youtube.com/watch?v=rc50owRPdUI" target="_blank">
+              https://www.youtube.com/
+              watch?v=rc50owRPdUI
+            </a></h5>
+
+      </div>
+    </div>
+    <!--footer-->
+  </footer>
+  <script>
+    var backVideo = document.getElementById('backVideo');
+    var playBtn = document.getElementById('playBtn');
+    var icon = document.getElementById('icon');
+
+    icon.onclick = function() {
+      backVideo.style.display = "block";
+
+      if (backVideo.paused) {
+        backVideo.play();
+        // icon.src="<ion-icon name="pause-circle"></ion-icon>";
+      } else {
+        backVideo.pause();
+        // icon.src="<ion-icon name="play-circle"></ion-icon>";
+      }
+
+    }
+  </script>
+</body>
+
 </html>

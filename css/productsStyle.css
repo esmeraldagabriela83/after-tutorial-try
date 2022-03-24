@@ -600,6 +600,36 @@ footer .footerIcons a:active{
     }
 }
 
+
+
+/*footer h3 about us */
+
+#aboutFooter{
+    padding-top: 5em;
+    padding-bottom: 3em;
+}
+
+footer h3#aboutFooter a{
+    color:olive;
+    /*background-color: white;*/
+    background-color: rgba(255, 255, 255,0.75);
+    border:3px solid skyblue;
+    border-radius: 1em;
+    padding: 0.7em 1.3em;
+    letter-spacing: 0.3em;
+    box-shadow: 1px 1px 5px darkslategray;
+}
+
+footer h3#aboutFooter a:hover{
+    color:crimson;
+}
+
+footer h3#aboutFooter a:active{
+    color:maroon;
+}
+
+
+
 /*https://www.youtube.com/watch?v=ZeMMvgCR7aU*/
 /*Navigation: linking multiple pages*/
 

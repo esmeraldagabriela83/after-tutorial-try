@@ -1,633 +1,616 @@
-
 @font-face {
-    font-family: 'arialic_hollowregular';
-    src: url('../ArialicHollowRegularFonts/arialic_hollow-webfont.woff2') format('woff2'),
+  font-family: 'arialic_hollowregular';
+  src: url('../ArialicHollowRegularFonts/arialic_hollow-webfont.woff2') format('woff2'),
     url('../ArialicHollowRegularFonts/arialic_hollow-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-weight: normal;
+  font-style: normal;
 }
-
-
 
 @font-face {
-    font-family: 'coolveticaregular';
-    src: url('../coolveticaRegularFonts/coolvetica-webfont.woff2') format('woff2'),
+  font-family: 'coolveticaregular';
+  src: url('../coolveticaRegularFonts/coolvetica-webfont.woff2') format('woff2'),
     url('../coolveticaRegularFonts/coolvetica-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-weight: normal;
+  font-style: normal;
 }
 
-*{
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-list-style-type: none;
-text-decoration: none;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
 }
 
-body{
+body {
   /*background-color: pink;*/
 }
 
 /* https://www.youtube.com/watch?v=oYRda7UtuhA
 How To Make Website Using HTML & CSS | Full Responsive Multi Page Website Design Step by Step  */
-
-
-                                                                         /*provizoriu*/
-
-h1 , h2 , h3, p{
+/*provizoriu*/
+h1, h2, h3, p {
   text-transform: capitalize;
   text-align: center;
-    padding: 1em;
+  padding: 1em;
 }
 
-h2{
-    font-family: 'coolveticaregular';
+h2 {
+  font-family: 'coolveticaregular';
 }
 
-h1{
-    font-family: 'arialic_hollowregular';
-    color:Crimson;
-    font-size: 4em;
-    text-shadow: 0.3px 0.3px 3px gray;
+h1 {
+  font-family: 'arialic_hollowregular';
+  color: Crimson;
+  font-size: 4em;
+  text-shadow: 0.3px 0.3px 3px gray;
 }
 
 /* after and after hover effect */
 h1::before,
-h1::after{
-    content: "";
-    display: block;
-    width: 0%;
-    height: 3px;
-    text-shadow: 0.3px 0.3px 3px gray;
-    margin: auto;
-    transition: 1s;
-    background-color: Crimson;
+h1::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 3px;
+  text-shadow: 0.3px 0.3px 3px gray;
+  margin: auto;
+  transition: 1s;
+  background-color: Crimson;
 }
 
 h1:hover::before,
-h1:hover::after{
-    /*width: 1088px;*/
-    width: 100%;
+h1:hover::after {
+  /*width: 1088px;*/
+  width: 100%;
 }
-/*after and after hover effect*/
 
-h3{
-    font-family: 'coolveticaregular';
-    letter-spacing: 0.3em;
-    padding: 1em;
-    font-weight: bold;
+/*after and after hover effect*/
+h3 {
+  font-family: 'coolveticaregular';
+  letter-spacing: 0.3em;
+  padding: 1em;
+  font-weight: bold;
 }
 
 h5 {
-    font-family: 'coolveticaregular';
-}
-p{
-    font-family: 'Fredoka', sans-serif;
-    color: SkyBlue;
+  font-family: 'coolveticaregular';
 }
 
-
-
-
-
-
-                                                                         /*header home*/
-.transparency{
-    background-color: #00000066;
-    /*background-image: linear-gradient(to bottom , rgba(50, 82, 3, 0.25), rgba(202, 212, 241, 0.75));*/
-    height: 100vh;
-    width: 100%;
+p {
+  font-family: 'Fredoka', sans-serif;
+  color: SkyBlue;
 }
 
+/*header home*/
+.transparency {
+  background-color: #00000066;
+  /*background-image: linear-gradient(to bottom , rgba(50, 82, 3, 0.25), rgba(202, 212, 241, 0.75));*/
+  height: 100vh;
+  width: 100%;
+}
 
-header#home{
-height: 100vh;
+header#home {
+  height: 100vh;
   /* background-image: url(../images/Image.jpg); */
- background-image: url(https://images.unsplash.com/photo-1623387641168-d9803ddd3f35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
- width: 100%;
- background-repeat: no-repeat;
- background-position: center;
- background-size: cover;
-    box-shadow: 0.5px 0.5px 10px gray;
+  background-image: url(https://images.unsplash.com/photo-1623387641168-d9803ddd3f35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0.5px 0.5px 10px gray;
 }
 
-.container{
-max-width: 1088px;
-margin: 0 auto;
+.container {
+  max-width: 1088px;
+  margin: 0 auto;
 }
 
 nav {
-/*background-color: Olive;*/
-   background-color: rgba(128, 128, 0, 0.75);
+  /*background-color: Olive;*/
+  background-color: rgba(128, 128, 0, 0.75);
 }
 
-nav div.container{
+nav div.container {
   display: flex;
   justify-content: space-between;
   height: 80px;
   align-items: center;
 }
 
-.logo{
-font-weight: bold;
-font-size: 2.1em;
-    display: flex;
-}
-
-.logoSvg{
-    width: 100px;
-    height: 100px;
-    background-repeat: no-repeat;
-    background-image: url(../images/pet-project-logo-white-01.svg);
-    background-position: center;
-    background-size: cover;
-}
-.logoWords{
-    margin-left: -1em;
-    margin-top: 0.6em;
-    width: 50%;
-    text-align: center;
-    font-family: 'coolveticaregular';
-}
-
-/*span 1 pet word*/
-.logo span:nth-of-type(1){
-    letter-spacing: 0.3em;
-color: SkyBlue;
-}
-/*span 2 project word*/
-.logo span:nth-of-type(2){
-    color: Crimson;
-}
-
-.menu li{
-display: flex;
-height: 80px;
-}
-
-.menu li a{
-color: white;
-line-height: 80px;
-padding: 0 1em;
-    letter-spacing: 0.3em;
-    font-family: 'coolveticaregular';
-}
-
-.menu li a:hover{
-  background-color: rgba(255,255,255,0.25);
-}
-
-.menu{
+.logo {
+  font-weight: bold;
+  font-size: 2.1em;
   display: flex;
 }
 
-.catSvg{
-    width: 80px;
-    height: 80px;
-    background-repeat: no-repeat;
-    background-image: url(../images/white-cat-01.svg);
-    background-position: center;
-    background-size: cover;
+.logoSvg {
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-image: url(../images/pet-project-logo-white-01.svg);
+  background-position: center;
+  background-size: cover;
 }
 
-.dogSvg{
-    width: 80px;
-    height: 80px;
-    background-repeat: no-repeat;
-    background-image: url(../images/white-dog-01.svg);
-    background-position: center;
-    background-size: cover;
+.logoWords {
+  margin-left: -1em;
+  margin-top: 0.6em;
+  width: 50%;
+  text-align: center;
+  font-family: 'coolveticaregular';
 }
-                                                          /* media screen for header  */
+
+/*span 1 pet word*/
+.logo span:nth-of-type(1) {
+  letter-spacing: 0.3em;
+  color: SkyBlue;
+}
+
+/*span 2 project word*/
+.logo span:nth-of-type(2) {
+  color: Crimson;
+}
+
+.menu li {
+  display: flex;
+  height: 80px;
+}
+
+.menu li a {
+  color: white;
+  line-height: 80px;
+  padding: 0 1em;
+  letter-spacing: 0.3em;
+  font-family: 'coolveticaregular';
+}
+
+.menu li a:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.menu {
+  display: flex;
+}
+
+.catSvg {
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-image: url(../images/white-cat-01.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+.dogSvg {
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-image: url(../images/white-dog-01.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* media screen for header  */
 @media screen and (max-width: 959px) {
+  header#home {
+    background-image: url(https://images.unsplash.com/photo-1509205477838-a534e43a849f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=878&q=80);
+  }
 
-    header#home{
-        background-image: url(https://images.unsplash.com/photo-1509205477838-a534e43a849f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=878&q=80);
-    }
-
-    .menu{
+  .menu {
     margin-right: 1.5em;
-    }
+  }
 
-    .logo{
-        margin-left: 0;
-        font-weight: bold;
-        font-size: 1.5em;
-    }
+  .logo {
+    margin-left: 0;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
 
-    .logoSvg{
-        width: 60px;
-        height: 60px;
-    }
+  .logoSvg {
+    width: 60px;
+    height: 60px;
+  }
 
-    .logoWords{
-        margin-left: 0;
-        margin-top: 0.5em;
-        width: 25%;
-    }
+  .logoWords {
+    margin-left: 0;
+    margin-top: 0.5em;
+    width: 25%;
+  }
 
-    .logo span:nth-of-type(1){
-        letter-spacing: 1em;
-    }
+  .logo span:nth-of-type(1) {
+    letter-spacing: 1em;
+  }
 
-    .menu li a{
-        letter-spacing: 0.15em;
-        padding: 0 0.15em;
-    }
+  .menu li a {
+    letter-spacing: 0.15em;
+    padding: 0 0.15em;
+  }
 
-    .catSvg{
-        margin-top: 0.5em;
-        width: 60px;
-        height: 60px;
-    }
+  .catSvg {
+    margin-top: 0.5em;
+    width: 60px;
+    height: 60px;
+  }
 
-    .dogSvg{
-        margin-top: 0.5em;
-        width: 60px;
-        height: 60px;
-    }
-/*only fonts*/
-    h1{
-        font-size: 2em;
-    }
+  .dogSvg {
+    margin-top: 0.5em;
+    width: 60px;
+    height: 60px;
+  }
 
-    h1:hover::before,
-    h1:hover::after{
-        width: 100%;
-    }
+  /*only fonts*/
+  h1 {
+    font-size: 2em;
+  }
 
-    h3{
-        letter-spacing: 0.15em;
-    }
+  h1:hover::before,
+  h1:hover::after {
+    width: 100%;
+  }
+
+  h3 {
+    letter-spacing: 0.15em;
+  }
 }
 
-
-      /*header links !!! must curs 3 ex 1 exercise only for the home page*/
-
-
-
-
-
-
-
-      /*content petInfoArticle*/
-
-.colHome .petHomeDrawing{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1em;
+/*header links !!! must curs 3 ex 1 exercise only for the home page*/
+/*content petInfoArticle*/
+.colHome .petHomeDrawing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1em;
 }
 
 /*Crimson
 #dc143c
 rgb(220, 20, 60)
 hsl(348, 83%, 47%)*/
-
 /*Olive
 #808000
 rgb(128, 128, 0)
 hsl(60, 100%, 25%)*/
-
 /*SkyBlue
 #87ceeb
 rgb(135, 206, 235)
 hsl(197, 71%, 73%)*/
-
-#catIllustrationInfo{
-    height: 15em;
-    width: 15em;
-    background-repeat: no-repeat;
-    background-image: url(../images/undraw_playful_cat_re_ac9g.svg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 1em;
-    background-color: rgba(135, 206, 235, 0.5);
-    /*border: 3px solid Olive;*/
-    box-shadow: 0.5px 0.5px 10px gray;
+#catIllustrationInfo {
+  height: 15em;
+  width: 15em;
+  background-repeat: no-repeat;
+  background-image: url(../images/undraw_playful_cat_re_ac9g.svg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 1em;
+  background-color: rgba(135, 206, 235, 0.5);
+  /*border: 3px solid Olive;*/
+  box-shadow: 0.5px 0.5px 10px gray;
 }
 
-#catIllustrationInfo:hover{
-    background-color: rgba(128, 128, 0, 0.5);
-    transition: 0.5s;
+#catIllustrationInfo:hover {
+  background-color: rgba(128, 128, 0, 0.5);
+  transition: 0.5s;
 }
 
-#petIllustrationInfo{
-    height: 15em;
-    width: 15em;
-    background-repeat: no-repeat;
-    background-image: url(../images/undraw_friends_r511.svg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 1em;
-    background-color: rgba(135, 206, 235, 0.5);
-    /*border: 3px solid Olive;*/
-    box-shadow: 0.5px 0.5px 10px gray;
+#petIllustrationInfo {
+  height: 15em;
+  width: 15em;
+  background-repeat: no-repeat;
+  background-image: url(../images/undraw_friends_r511.svg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 1em;
+  background-color: rgba(135, 206, 235, 0.5);
+  /*border: 3px solid Olive;*/
+  box-shadow: 0.5px 0.5px 10px gray;
 }
 
-#petIllustrationInfo:hover{
-    background-color: rgba(128, 128, 0, 0.5);
-    transition: 0.5s;
+#petIllustrationInfo:hover {
+  background-color: rgba(128, 128, 0, 0.5);
+  transition: 0.5s;
 }
 
-#dogIllustrationInfo{
-    height: 15em;
-    width: 15em;
-    background-repeat: no-repeat;
-    background-image: url(../images/undraw_woman_mevk.svg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 1em;
-    background-color: rgba(135, 206, 235, 0.5);
-    /*border: 3px solid Olive;*/
-    box-shadow: 0.5px 0.5px 10px gray;
+#dogIllustrationInfo {
+  height: 15em;
+  width: 15em;
+  background-repeat: no-repeat;
+  background-image: url(../images/undraw_woman_mevk.svg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 1em;
+  background-color: rgba(135, 206, 235, 0.5);
+  /*border: 3px solid Olive;*/
+  box-shadow: 0.5px 0.5px 10px gray;
 }
 
-#dogIllustrationInfo:hover{
-    background-color: rgba(128, 128, 0, 0.5);
-    transition: 0.5s;
+#dogIllustrationInfo:hover {
+  background-color: rgba(128, 128, 0, 0.5);
+  transition: 0.5s;
 }
 
-#petInfoParagraph{
-    color:Maroon;
+#petInfoParagraph {
+  color: Maroon;
 }
 
-.colHome h2{
-    letter-spacing: 0.25em;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.colHome h2 {
+  letter-spacing: 0.25em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .colHome h2::before,
 .colHome h2::after {
-    content: "";
-    display: block;
-    margin: 0 0.5em;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background: Crimson;
+  content: "";
+  display: block;
+  margin: 0 0.5em;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: Crimson;
 }
 
 .colHome h2:hover::before,
-.colHome h2:hover::after{
-    content: "";
-    display: block;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background: Skyblue;
-    transition: 0.5s;
+.colHome h2:hover::after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: Skyblue;
+  transition: 0.5s;
 }
 
 .colHome h2 strong {
-    display: inline-block;
-    padding: 0.5em 0.3em;
-    color:Olive;
+  display: inline-block;
+  padding: 0.5em 0.3em;
+  color: Olive;
 }
 
 /* media screen for pet info  */
 @media screen and (max-width: 959px) {
+  .colHome h2 {
+    font-size: 1em;
+    letter-spacing: 0.1em;
+  }
 
-    .colHome h2{
-        font-size: 1em;
-        letter-spacing: 0.1em;
-    }
+  #catIllustrationInfo {
+    height: 13.5em;
+    width: 13.5em;
+    background-color: rgba(128, 128, 0, 0.25);
+  }
 
-    #catIllustrationInfo{
-        height: 13.5em;
-        width: 13.5em;
-        background-color: rgba(128, 128, 0,0.25);
-    }
+  #catIllustrationInfo:hover {
+    transition: 0.5s;
+    background-color: rgba(135, 206, 235, 0.25);
+  }
 
-    #catIllustrationInfo:hover{
-        transition: 0.5s;
-        background-color: rgba(135, 206, 235, 0.25);
-    }
+  #petIllustrationInfo {
+    height: 13.5em;
+    width: 13.5em;
+    background-color: rgba(128, 128, 0, 0.25);
+  }
 
-    #petIllustrationInfo{
-        height: 13.5em;
-        width: 13.5em;
-        background-color: rgba(128, 128, 0,0.25);
-    }
+  #petIllustrationInfo:hover {
+    transition: 0.5s;
+    background-color: rgba(135, 206, 235, 0.25);
+  }
 
-    #petIllustrationInfo:hover{
-        transition: 0.5s;
-        background-color: rgba(135, 206, 235, 0.25);
-    }
+  #dogIllustrationInfo {
+    height: 13.5em;
+    width: 13.5em;
+    background-color: rgba(128, 128, 0, 0.25);
+  }
 
-    #dogIllustrationInfo{
-        height: 13.5em;
-        width: 13.5em;
-        background-color: rgba(128, 128, 0,0.25);
-    }
-
-    #dogIllustrationInfo:hover{
-        transition: 0.5s;
-        background-color: rgba(135, 206, 235, 0.25);
-    }
+  #dogIllustrationInfo:hover {
+    transition: 0.5s;
+    background-color: rgba(135, 206, 235, 0.25);
+  }
 }
 
 @media screen and (min-width: 960px) {
+  #petInfoParagraph {
+    padding-bottom: 3.5em;
+  }
 
-    #petInfoParagraph{
-        padding-bottom: 3.5em;
-    }
+  .vl {
+    border-left: 3px solid Olive;
+    height: 35em;
+  }
 
-    .vl {
-        border-left: 3px solid Olive;
-        height: 35em;
-    }
+  .rowHome {
+    display: flex;
+    margin-bottom: 1.5em;
+  }
 
-    .rowHome{
-        display: flex;
-        margin-bottom: 1.5em;
-    }
+  .colHome {
+    width: 33.33%;
+  }
 
-    .colHome{
-        width: 33.33%;
-    }
-
-    .colHome h2{
-        margin: 0 -1em;
-    }
-
+  .colHome h2 {
+    margin: 0 -1em;
+  }
 }
 
-        /*content petInfoArticle*/
-
-
-
+/*content petInfoArticle*/
 /*testimonials   content*/
-
-.ourFriends{
-    text-align: center;
+.ourFriends {
+  text-align: center;
 }
 
-#paragraph-home-friends{
-    color:Maroon;
+#paragraph-home-friends {
+  color: Maroon;
 }
 
-.row-friends{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin:1.5em;
-    height: auto;
+.row-friends {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1.5em;
+  height: auto;
 }
 
-.testimonial-col-home{
-    width: 20em;
-    height: auto;
-    margin: 0.7em;
-    background-color:rgba(220, 20, 60, 0.75);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 1em;
-    box-shadow: 0.5px 0.5px 10px gray;
+.testimonial-col-home {
+  width: 20em;
+  height: auto;
+  margin: 0.7em;
+  background-color: rgba(220, 20, 60, 0.75);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1em;
+  box-shadow: 0.5px 0.5px 10px gray;
 }
 
-
-
-@media (min-width: 550px) and (max-width: 1088px){
-    .testimonial-col-home{
-        margin: 2.5em;
-    }
+@media (min-width: 550px) and (max-width: 1088px) {
+  .testimonial-col-home {
+    margin: 2.5em;
+  }
 }
 
-
-
-.testimonial-image{
-    height: 150px;
-    width: 150px;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-    background-size: cover;
-    margin-top: 1em;
+.testimonial-image {
+  height: 150px;
+  width: 150px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  background-size: cover;
+  margin-top: 1em;
 }
 
-.testimonial-image.user-1{
-background-image: url(https://images.unsplash.com/photo-1581456495146-65a71b2c8e52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80);
+.testimonial-image.user-1 {
+  background-image: url(https://images.unsplash.com/photo-1581456495146-65a71b2c8e52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80);
 }
 
-.testimonial-image.user-2{
-    background-image: url(https://images.unsplash.com/photo-1473830394358-91588751b241?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+.testimonial-image.user-2 {
+  background-image: url(https://images.unsplash.com/photo-1473830394358-91588751b241?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
 }
 
-.testimonial-image.user-3{
-    background-image: url(https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+.testimonial-image.user-3 {
+  background-image: url(https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
 }
 
-.user-info h3{
-    color:white;
+.user-info h3 {
+  color: white;
 }
 
-.user-info ion-icon{
-    color:white;
-    font-size: 1.5em;
-    padding: 0 0.5em;
+.user-info ion-icon {
+  color: white;
+  font-size: 1.5em;
+  padding: 0 0.5em;
 }
 
 /* media screen for footer  */
 @media screen and (max-width: 959px) {
+  .row-friends {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-    .row-friends{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .testimonial-col-home{
-        margin: 1.5em;
-    }
-
+  .testimonial-col-home {
+    margin: 1.5em;
+  }
 }
 
 /*testimonials   content*/
-
-
-
-                                     /*footer*/
-footer{
-    background-color: Olive;
+/*footer*/
+footer {
+  background-color: Olive;
 }
 
-#aboutFooter{
-    padding-top: 2.5em;
+#aboutFooter {
+  padding-top: 2.5em;
 }
 
-footer #icons{
-    margin-top: 1em;
-    font-size: 1.5em;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+footer #icons {
+  margin-top: 1em;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-footer .footerIcons a{
-    color:Skyblue;
-    font-size: 3em;
+footer .footerIcons a {
+  color: Skyblue;
+  font-size: 3em;
 }
 
-footer .footerIcons a:hover{
-    color:Crimson;
-    font-weight: bold;
+footer .footerIcons a:hover {
+  color: Crimson;
+  font-weight: bold;
 }
 
-footer .footerIcons a:active{
-    color:Maroon;
-    font-weight: bold;
+footer .footerIcons a:active {
+  color: Maroon;
+  font-weight: bold;
 }
 
-#divSources h5{
+#divSources h5 {
   text-align: center;
   line-height: 3.5em;
   letter-spacing: 0.1em;
 }
 
-#divSources h5 a{
-    color:Skyblue;
+#divSources h5 a {
+  color: Skyblue;
 }
 
-#divSources h5 a:hover{
-    color:Crimson;
-    font-weight: bold;
+#divSources h5 a:hover {
+  color: Crimson;
+  font-weight: bold;
 }
 
-#divSources h5 a:active{
-    color:Maroon;
-    font-weight: bold;
+#divSources h5 a:active {
+  color: Maroon;
+  font-weight: bold;
 }
 
-                                                                    /* media screen for footer  */
+/* media screen for footer  */
 @media screen and (max-width: 959px) {
+  #divSources h5 {
+    text-align: center;
+    line-height: 1.7em;
+    letter-spacing: 0.1em;
+    margin: 1.5em 0;
+  }
 
-    #divSources h5{
-        text-align: center;
-        line-height: 1.7em;
-        letter-spacing: 0.1em;
-        margin: 1.5em 0;
-    }
+  footer #icons {
+    font-size: 1em;
+    display: block;
+    text-align: center;
+  }
 
-    footer #icons{
-        font-size: 1em;
-        display: block;
-       text-align: center;
-    }
+  footer #icons div {
+    padding: 0.7em 0;
+  }
+}
 
+/*footer h3 about us */
+#aboutFooter {
+  padding-top: 5em;
+  padding-bottom: 3em;
+}
 
-    footer #icons div{
-        padding: 0.7em 0;
-    }
+footer h3#aboutFooter a {
+  color: olive;
+  /*background-color: white;*/
+  background-color: rgba(255, 255, 255, 0.75);
+  border: 3px solid skyblue;
+  border-radius: 1em;
+  padding: 0.7em 1.3em;
+  letter-spacing: 0.3em;
+  box-shadow: 1px 1px 5px darkslategray;
+}
+
+footer h3#aboutFooter a:hover {
+  color: crimson;
+}
+
+footer h3#aboutFooter a:active {
+  color: maroon;
 }
 
 /*https://www.youtube.com/watch?v=ZeMMvgCR7aU*/
 /*Navigation: linking multiple pages*/
-

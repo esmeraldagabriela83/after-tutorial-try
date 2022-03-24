@@ -1,0 +1,1253 @@
+@font-face {
+  font-family: 'arialic_hollowregular';
+  src: url("../../ArialicHollowRegularFonts/arialic_hollow-webfont.woff2") format("woff2"), url("../../ArialicHollowRegularFonts/arialic_hollow-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'coolveticaregular';
+  src: url("../../coolveticaRegularFonts/coolvetica-webfont.woff2") format("woff2"), url("../../coolveticaRegularFonts/coolvetica-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 15, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/* line 23, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+body {
+  /*background-color: pink;*/
+}
+
+/* https://www.youtube.com/watch?v=oYRda7UtuhA
+How To Make Website Using HTML & CSS | Full Responsive Multi Page Website Design Step by Step  */
+/*provizoriu*/
+/* line 29, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+h1,
+h2,
+h3,
+p {
+  text-transform: capitalize;
+  text-align: center;
+  padding: 1em;
+}
+
+/* line 38, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+h2 {
+  font-family: 'coolveticaregular';
+}
+
+/* line 42, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+h1 {
+  font-family: 'arialic_hollowregular';
+  color: Crimson;
+  font-size: 4em;
+  text-shadow: 0.3px 0.3px 3px gray;
+}
+
+/* after and after hover effect */
+/* line 50, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+h1::after,
+h1::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  text-shadow: 0.3px 0.3px 3px gray;
+  margin: auto;
+  transition: 1s;
+  background-color: Crimson;
+}
+
+/* line 62, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+h1:hover::after,
+h1:hover::before {
+  /*width: 1088px;*/
+  width: 100%;
+}
+
+/*after and after hover effect*/
+/* line 68, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+h3 {
+  font-family: 'coolveticaregular';
+  letter-spacing: 0.3em;
+  padding: 1em;
+  font-weight: bold;
+}
+
+/* line 75, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+h5 {
+  font-family: 'coolveticaregular';
+}
+
+/* line 79, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+p {
+  font-family: 'Fredoka', sans-serif;
+  color: SkyBlue;
+}
+
+/*header about us*/
+/* line 84, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+.container {
+  max-width: 1088px;
+  margin: 0 auto;
+}
+
+/* line 89, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+nav {
+  /*background-color: Olive;*/
+  background-color: olive;
+}
+
+/* line 94, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+nav div.container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+}
+
+/* line 101, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+.logo {
+  font-weight: bold;
+  font-size: 2.1em;
+  display: flex;
+}
+
+/* line 107, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+.logoSvg {
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-image: url("../../images/pet-project-logo-white-01.svg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* line 116, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+.logoWords {
+  margin-left: -1em;
+  margin-top: 0.6em;
+  width: 50%;
+  text-align: center;
+  font-family: 'coolveticaregular';
+}
+
+/*span 1 pet word*/
+/* line 125, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+.logo span:nth-of-type(1) {
+  letter-spacing: 0.3em;
+  color: SkyBlue;
+}
+
+/*span 2 project word*/
+/* line 131, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+.logo span:nth-of-type(2) {
+  color: Crimson;
+}
+
+/* line 135, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+.menu li {
+  display: flex;
+  height: 80px;
+}
+
+/* line 140, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+.menu li a {
+  color: white;
+  line-height: 80px;
+  padding: 0 1em;
+  letter-spacing: 0.3em;
+  font-family: 'coolveticaregular';
+}
+
+/* line 148, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+.menu li a:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* line 152, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+.menu {
+  display: flex;
+}
+
+/* line 156, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+.catSvg {
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-image: url("../../images/white-cat-01.svg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* line 165, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+.dogSvg {
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-image: url("../../images/white-dog-01.svg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* media screen for header  */
+@media screen and (max-width: 959px) {
+  /* line 175, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  .menu {
+    margin-right: 1.5em;
+  }
+  /* line 179, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  .logo {
+    margin-left: 0;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  /* line 185, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  .logoSvg {
+    width: 60px;
+    height: 60px;
+  }
+  /* line 190, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  .logoWords {
+    margin-left: 0;
+    margin-top: 0.5em;
+    width: 25%;
+  }
+  /* line 196, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  .logo span:nth-of-type(1) {
+    letter-spacing: 1em;
+  }
+  /* line 200, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  .menu li a {
+    letter-spacing: 0.15em;
+    padding: 0 0.15em;
+  }
+  /* line 205, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  .catSvg {
+    margin-top: 0.5em;
+    width: 60px;
+    height: 60px;
+  }
+  /* line 211, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  .dogSvg {
+    margin-top: 0.5em;
+    width: 60px;
+    height: 60px;
+  }
+  /*only fonts*/
+  /* line 217, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  h1 {
+    font-size: 2em;
+  }
+  /* line 221, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  h1:hover::after,
+  h1:hover::before {
+    width: 100%;
+  }
+  /* line 226, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  h3 {
+    letter-spacing: 0.15em;
+  }
+}
+
+/*header about-us*/
+/* line 231, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+#single-link-0n-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 235, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+#single-link-0n-page .more-info {
+  width: 50%;
+  background-color: crimson;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'coolveticaregular';
+  letter-spacing: 0.3em;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 3em;
+  border-radius: 0.5em;
+  padding: 0.3em 0;
+  color: white;
+  box-shadow: 0.3px 0.3px 3px black;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 959px) {
+  /* line 235, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  #single-link-0n-page .more-info {
+    letter-spacing: 0.1em;
+    font-size: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  /* line 235, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  #single-link-0n-page .more-info {
+    flex-direction: row-reverse;
+  }
+}
+
+/* line 262, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+#single-link-0n-page .more-info ion-icon {
+  font-size: 1.5em;
+  color: skyblue;
+}
+
+@media screen and (max-width: 959px) {
+  /* line 262, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  #single-link-0n-page .more-info ion-icon {
+    margin-right: 0.5em;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  /* line 262, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  #single-link-0n-page .more-info ion-icon {
+    margin-left: 1em;
+  }
+}
+
+/*content*/
+/* line 277, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+#before-after-ul-effect {
+  border: 3px solid olive;
+  margin-top: 6.5em;
+  margin-bottom: 10em;
+  padding: 10em 0;
+  border-radius: 1em;
+  box-shadow: 0.3px 0.3px 3px black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  /*before upper photo*/
+  /*after dog photo*/
+}
+
+/* line 289, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+#before-after-ul-effect::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -7.5em;
+  left: calc(50% - 15em);
+  height: 15em;
+  width: 30em;
+  background-repeat: no-repeat;
+  background-image: url("https://img.freepik.com/free-photo/adorable-kittens-with-fuzzy-hair-sitting-white-surface-with-two-guinea-pigs_181624-43705.jpg?t=st=1647260946~exp=1647261546~hmac=a16ed5c754d457e108e423b402effa41cde17387c5a0e5881a6761db08603872&w=1380");
+  background-position: center;
+  background-size: cover;
+  border: 3px solid olive;
+  border-radius: 1em;
+  box-shadow: 0.3px 0.3px 3px black;
+}
+
+@media screen and (max-width: 959px) {
+  /* line 289, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  #before-after-ul-effect::before {
+    height: 10em;
+    width: 25em;
+    top: -5em;
+    left: calc(50% - 12.5em);
+  }
+}
+
+/* line 311, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+#before-after-ul-effect::before li {
+  padding: 5.5em 1.5em;
+}
+
+@media screen and (max-width: 959px) {
+  /* line 277, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  #before-after-ul-effect {
+    display: block;
+    margin-top: 5em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+/* line 322, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+#before-after-ul-effect::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -7.5em;
+  left: calc(50% - 15em);
+  height: 15em;
+  width: 30em;
+  background-repeat: no-repeat;
+  background-image: url("https://img.freepik.com/free-psd/group-puppies-wearing-christmas-costumes-celebrate-christmas_53876-73963.jpg?t=st=1647269242~exp=1647269842~hmac=0790d3f397d79315a59c606cdd1c36ac3f004f36fc923bb8dcf33bd345551d0a&w=1380");
+  background-position: center;
+  background-size: cover;
+  border: 3px solid olive;
+  border-radius: 1em;
+  box-shadow: 0.3px 0.3px 3px black;
+}
+
+@media screen and (max-width: 959px) {
+  /* line 322, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  #before-after-ul-effect::after {
+    height: 10em;
+    width: 25em;
+    bottom: -5em;
+    left: calc(50% - 12.5em);
+  }
+}
+
+/* line 344, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+#before-after-ul-effect::after li {
+  padding: 5.5em 1.5em;
+}
+
+@media screen and (max-width: 959px) {
+  /* line 277, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  #before-after-ul-effect {
+    display: block;
+    margin-bottom: 5em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+/* line 356, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+#before-after-ul-effect p {
+  position: relative;
+  border: 3px solid olive;
+  border-radius: 1em;
+  box-shadow: 0.3px 0.3px 3px black;
+  margin: 1em;
+  padding: 1.5em 0.5em;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 959px) {
+  /* line 356, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  #before-after-ul-effect p {
+    margin: 3em 1em;
+    padding: 1.5em 0.5em;
+  }
+}
+
+/* line 369, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+#before-after-ul-effect p::before {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background-color: crimson;
+  border-radius: 0.3em;
+  right: calc(50% - 15px);
+  top: -1em;
+  margin-top: -1.5em 0;
+  transform: rotate(45deg);
+}
+
+/* line 382, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+#before-after-ul-effect p:hover::before {
+  background-color: skyblue;
+  transition: 0.5s;
+}
+
+/* line 387, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+#before-after-ul-effect p::after {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background-color: crimson;
+  border-radius: 0.3em;
+  right: calc(50% - 15px);
+  bottom: -1em;
+  margin-bottom: -1.5em 0;
+  transform: rotate(45deg);
+}
+
+/* line 400, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+#before-after-ul-effect p:hover::after {
+  background-color: skyblue;
+  transition: 0.5s;
+}
+
+/*  list-toolTip  with alert text */
+/* line 426, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+ul#list-toolTip {
+  border: 3px solid olive;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  padding: 1.5em 1em;
+  border-radius: 1em;
+  box-shadow: 0.3px 0.3px 3px black;
+}
+
+@media screen and (min-width: 960px) {
+  /* line 426, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  ul#list-toolTip {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  /* line 426, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  ul#list-toolTip {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+/* line 443, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+ul#list-toolTip li {
+  position: relative;
+  border-radius: 1em;
+  padding: 0.5em;
+}
+
+/* line 408, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+ul#list-toolTip li:hover::after {
+  content: "No animal left behind";
+  width: 70%;
+  display: inline-block;
+  font-size: 1.5em;
+  color: crimson;
+  font-family: cursive;
+  font-weight: bold;
+  text-shadow: 0.1px 0.1px 1.5px black;
+  position: absolute;
+  left: calc(50% - 5.25em);
+  bottom: -0.5em;
+}
+
+@media screen and (min-width: 960px) {
+  /* line 408, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  ul#list-toolTip li:hover::after {
+    width: 100%;
+  }
+}
+
+/* line 450, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+ul#list-toolTip li p {
+  border: 3px solid olive;
+  font-weight: bold;
+  border-radius: 1em;
+  box-shadow: 0.3px 0.3px 3px black;
+  margin: 2em;
+  padding: 1.5em 0.5em;
+}
+
+/* line 454, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+ul#list-toolTip li p:hover {
+  border: 3px solid crimson;
+}
+
+@media screen and (max-width: 959px) {
+  /* line 450, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  ul#list-toolTip li p {
+    margin: 3em 1em;
+    padding: 1.5em 0.5em;
+  }
+}
+
+/*  list-toolTip  with alert text */
+/*  list-toolTipImage  with image before and after */
+/* line 522, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+ul#list-toolTipImage {
+  border-radius: 1em;
+}
+
+@media screen and (min-width: 960px) {
+  /* line 522, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  ul#list-toolTipImage {
+    margin-top: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  /* line 522, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  ul#list-toolTipImage {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+/* line 536, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+ul#list-toolTipImage li {
+  border: 3px solid olive;
+  margin-top: 6.5em;
+  margin-bottom: 10em;
+  padding: 10em 0;
+  border-radius: 1em;
+  box-shadow: 0.3px 0.3px 3px black;
+  position: relative;
+  /*before and after hover on tag p inside li*/
+}
+
+/* line 471, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+ul#list-toolTipImage li:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  transition: 0.5s;
+  bottom: -7.5em;
+  left: calc(50% - 15em);
+  height: 15em;
+  width: 30em;
+  background-repeat: no-repeat;
+  background-image: url("https://images.unsplash.com/photo-1425082661705-1834bfd09dca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80");
+  background-position: center;
+  background-size: cover;
+  border: 3px solid olive;
+  border-radius: 1em;
+  box-shadow: 0.3px 0.3px 3px black;
+}
+
+@media screen and (max-width: 959px) {
+  /* line 471, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  ul#list-toolTipImage li:hover::after {
+    height: 10em;
+    width: 25em;
+    bottom: -5em;
+    left: calc(50% - 12.5em);
+  }
+}
+
+/* line 495, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+ul#list-toolTipImage li:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  transition: 0.5s;
+  top: -7.5em;
+  left: calc(50% - 15em);
+  height: 15em;
+  width: 30em;
+  background-repeat: no-repeat;
+  background-image: url("https://images.unsplash.com/photo-1451909496057-8c1b9c9fd247?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-position: center;
+  background-size: cover;
+  border: 3px solid olive;
+  border-radius: 1em;
+  box-shadow: 0.3px 0.3px 3px black;
+}
+
+@media screen and (max-width: 959px) {
+  /* line 495, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  ul#list-toolTipImage li:hover::before {
+    height: 10em;
+    width: 25em;
+    bottom: -5em;
+    left: calc(50% - 12.5em);
+    margin-top: 3em;
+  }
+}
+
+/* line 548, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+ul#list-toolTipImage li p {
+  position: relative;
+  border: 3px solid olive;
+  border-radius: 1em;
+  box-shadow: 0.3px 0.3px 3px black;
+  margin: 1em;
+  padding: 1.5em 0.5em;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 959px) {
+  /* line 548, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  ul#list-toolTipImage li p {
+    margin: 3em 1em;
+    padding: 1.5em 0.5em;
+  }
+}
+
+/* line 561, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+ul#list-toolTipImage li p::before {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background-color: olive;
+  transform: rotate(45deg);
+  border-radius: 0.3em;
+  right: calc(50% - 15px);
+  top: -1em;
+  margin-top: -1.5em 0;
+}
+
+/* line 576, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+ul#list-toolTipImage li p::after {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background-color: olive;
+  transform: rotate(45deg);
+  border-radius: 0.3em;
+  right: calc(50% - 15px);
+  bottom: -1em;
+  margin-bottom: -1.5em 0;
+}
+
+/*  list-toolTipImage  with image before and after */
+/*Olive
+#808000
+rgb(128, 128, 0)
+hsl(60, 100%, 25%)*/
+/*even and odd numbers*/
+/* line 612, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+.block_1 {
+  border: 3px solid crimson;
+  background-color: skyblue;
+  width: 15em;
+  height: 17em;
+  margin: 1em;
+  border-radius: 1em;
+  box-shadow: 0.3px 0.3px 3px black;
+}
+
+@media screen and (max-width: 959px) {
+  /* line 612, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  .block_1 {
+    width: 13em;
+    height: 15em;
+  }
+}
+
+/* line 612, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+.block_2 {
+  border: 3px solid skyblue;
+  background-color: Crimson;
+  width: 15em;
+  height: 17em;
+  margin: 1em;
+  border-radius: 1em;
+  box-shadow: 0.3px 0.3px 3px black;
+}
+
+@media screen and (max-width: 959px) {
+  /* line 612, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  .block_2 {
+    width: 13em;
+    height: 15em;
+  }
+}
+
+/* line 612, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+.block_3 {
+  border: 3px solid crimson;
+  background-color: skyblue;
+  width: 15em;
+  height: 17em;
+  margin: 1em;
+  border-radius: 1em;
+  box-shadow: 0.3px 0.3px 3px black;
+}
+
+@media screen and (max-width: 959px) {
+  /* line 612, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  .block_3 {
+    width: 13em;
+    height: 15em;
+  }
+}
+
+/* line 612, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+.block_4 {
+  border: 3px solid skyblue;
+  background-color: Crimson;
+  width: 15em;
+  height: 17em;
+  margin: 1em;
+  border-radius: 1em;
+  box-shadow: 0.3px 0.3px 3px black;
+}
+
+@media screen and (max-width: 959px) {
+  /* line 612, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  .block_4 {
+    width: 13em;
+    height: 15em;
+  }
+}
+
+/* line 612, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+.block_5 {
+  border: 3px solid crimson;
+  background-color: skyblue;
+  width: 15em;
+  height: 17em;
+  margin: 1em;
+  border-radius: 1em;
+  box-shadow: 0.3px 0.3px 3px black;
+}
+
+@media screen and (max-width: 959px) {
+  /* line 612, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  .block_5 {
+    width: 13em;
+    height: 15em;
+  }
+}
+
+/* line 612, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+.block_6 {
+  border: 3px solid skyblue;
+  background-color: Crimson;
+  width: 15em;
+  height: 17em;
+  margin: 1em;
+  border-radius: 1em;
+  box-shadow: 0.3px 0.3px 3px black;
+}
+
+@media screen and (max-width: 959px) {
+  /* line 612, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  .block_6 {
+    width: 13em;
+    height: 15em;
+  }
+}
+
+/* line 612, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+.block_7 {
+  border: 3px solid crimson;
+  background-color: skyblue;
+  width: 15em;
+  height: 17em;
+  margin: 1em;
+  border-radius: 1em;
+  box-shadow: 0.3px 0.3px 3px black;
+}
+
+@media screen and (max-width: 959px) {
+  /* line 612, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  .block_7 {
+    width: 13em;
+    height: 15em;
+  }
+}
+
+/* line 612, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+.block_8 {
+  border: 3px solid skyblue;
+  background-color: Crimson;
+  width: 15em;
+  height: 17em;
+  margin: 1em;
+  border-radius: 1em;
+  box-shadow: 0.3px 0.3px 3px black;
+}
+
+@media screen and (max-width: 959px) {
+  /* line 612, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  .block_8 {
+    width: 13em;
+    height: 15em;
+  }
+}
+
+/* line 612, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+.block_9 {
+  border: 3px solid crimson;
+  background-color: skyblue;
+  width: 15em;
+  height: 17em;
+  margin: 1em;
+  border-radius: 1em;
+  box-shadow: 0.3px 0.3px 3px black;
+}
+
+@media screen and (max-width: 959px) {
+  /* line 612, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  .block_9 {
+    width: 13em;
+    height: 15em;
+  }
+}
+
+/* line 612, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+.block_10 {
+  border: 3px solid skyblue;
+  background-color: Crimson;
+  width: 15em;
+  height: 17em;
+  margin: 1em;
+  border-radius: 1em;
+  box-shadow: 0.3px 0.3px 3px black;
+}
+
+@media screen and (max-width: 959px) {
+  /* line 612, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  .block_10 {
+    width: 13em;
+    height: 15em;
+  }
+}
+
+/* line 627, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+#even-and-oddNumbers {
+  border: 3px solid olive;
+  box-shadow: 0.3px 0.3px 3px black;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  border-radius: 1em;
+}
+
+/* line 628, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+#even-and-oddNumbers .oneAnimal {
+  background-repeat: no-repeat;
+  background-image: url(../../images/oneAnimal.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* line 634, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+#even-and-oddNumbers .twoAnimal {
+  background-repeat: no-repeat;
+  background-image: url(../../images/twoAnimal.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* line 640, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+#even-and-oddNumbers .threeAnimal {
+  background-repeat: no-repeat;
+  background-image: url(../../images/threeAnimal.svg);
+  background-position: center;
+  background-size: cover;
+  transform: scaleX(-1);
+}
+
+/* line 647, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+#even-and-oddNumbers .fourAnimal {
+  background-repeat: no-repeat;
+  background-image: url(../../images/fourAnimal.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (min-width: 960px) {
+  /* line 627, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  #even-and-oddNumbers {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  /* line 627, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  #even-and-oddNumbers {
+    margin-left: 1em;
+    margin-right: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  /* line 670, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  #even-and-oddNumbers div:nth-of-type(2n) {
+    background-color: crimson;
+    margin: 1.5em;
+    padding: 1em;
+  }
+  /* line 675, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  #even-and-oddNumbers div:nth-of-type(2n + 1) {
+    background-color: skyblue;
+    margin: 1.5em;
+    padding: 1em;
+  }
+}
+
+/*even and odd numbers*/
+/*boxes container*/
+/* line 686, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+.boxes {
+  border: 3px solid olive;
+  box-shadow: 0.3px 0.3px 3px black;
+  margin-bottom: 3em;
+  padding-top: 1.5em;
+  border-radius: 1em;
+}
+
+@media screen and (min-width: 960px) {
+  /* line 686, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  .boxes {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  /* line 686, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  .boxes {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+/* line 703, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+.boxes .box {
+  width: 30%;
+  background-color: crimson;
+  border-radius: 0.5em;
+  margin-bottom: 1.5em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  box-shadow: 0.3px 0.3px 3px black;
+}
+
+@media screen and (max-width: 959px) {
+  /* line 703, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  .boxes .box {
+    width: 65%;
+  }
+}
+
+/* line 714, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+.boxes .box .image img {
+  width: 100%;
+  border-radius: 0.5em 0.5em 0 0;
+}
+
+/* line 719, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+.boxes .box .text {
+  padding: 1em;
+}
+
+/* line 721, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+.boxes .box .text #for-span-align-text {
+  text-align: center;
+}
+
+/* line 724, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+.boxes .box .text h3 {
+  color: white;
+  font-size: 2em;
+  word-spacing: 1em;
+}
+
+/* line 729, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+.boxes .box .text span {
+  letter-spacing: 0.3em;
+  color: skyblue;
+  text-align: center;
+  font-family: cursive;
+  font-size: 1.7em;
+}
+
+/* line 737, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+.boxes .box .text p {
+  letter-spacing: 0.1em;
+  padding-top: 1em;
+  font-size: 1em;
+  color: white;
+  font-family: 'coolveticaregular';
+  line-height: 1.5em;
+  font-weight: bold;
+}
+
+/*boxes container*/
+/*How TO - Flip an Image   https://www.w3schools.com/howto/howto_css_flip_image.asp*/
+/* line 753, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+#flip-image-and-text {
+  border: 3px solid olive;
+  box-shadow: 0.3px 0.3px 3px black;
+  margin-bottom: 3em;
+  margin-top: 3em;
+  padding-top: 1.7em;
+  border-radius: 1em;
+}
+
+@media screen and (min-width: 960px) {
+  /* line 753, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  #flip-image-and-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  /* line 753, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  #flip-image-and-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+/* line 775, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+#flip-image-and-text h3 {
+  font-weight: bold;
+  color: crimson;
+  letter-spacing: 0.3em;
+  font-size: 2em;
+  margin-top: -1em;
+}
+
+/* line 783, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+#flip-image-and-text #text-lovely-pet {
+  width: 50%;
+}
+
+@media screen and (max-width: 959px) {
+  /* line 783, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  #flip-image-and-text #text-lovely-pet {
+    margin-top: 2em;
+    width: 100%;
+  }
+}
+
+/* line 789, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+#flip-image-and-text #text-lovely-pet p {
+  letter-spacing: 0.1em;
+  padding-top: 1em;
+  font-size: 1em;
+  margin: 0 1em;
+  line-height: 1.5em;
+  font-weight: bold;
+}
+
+/* line 797, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+#flip-image-and-text #text-lovely-pet span, #flip-image-and-text #text-lovely-pet em {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* line 801, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+#flip-image-and-text #text-lovely-pet span {
+  color: olive;
+  font-style: oblique;
+}
+
+/* line 805, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+#flip-image-and-text #text-lovely-pet em {
+  color: crimson;
+}
+
+/* line 809, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+#flip-image-and-text #title-and-image-pet {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 959px) {
+  /* line 809, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  #flip-image-and-text #title-and-image-pet {
+    width: 100%;
+    margin-top: 2em;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  /* line 809, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  #flip-image-and-text #title-and-image-pet {
+    width: 65%;
+  }
+}
+
+/* line 823, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+#flip-image-and-text #title-and-image-pet .pet-image {
+  width: 100%;
+  margin: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 830, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+#flip-image-and-text #title-and-image-pet .pet-image img {
+  width: 100%;
+  border-radius: 0.5em;
+  box-shadow: 0.3px 0.3px 3px black;
+  transition: 3.5s;
+}
+
+@media screen and (min-width: 960px) {
+  /* line 830, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  #flip-image-and-text #title-and-image-pet .pet-image img {
+    width: 35%;
+  }
+}
+
+/* line 838, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+#flip-image-and-text #title-and-image-pet .pet-image img:hover {
+  transform: scaleX(-1);
+  transition: 3.5s;
+}
+
+/*How TO - Flip an Image   https://www.w3schools.com/howto/howto_css_flip_image.asp*/
+/*content*/
+/*footer about us*/
+/* line 853, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+footer {
+  background-color: Olive;
+}
+
+/* line 856, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+footer #divSources h5 {
+  text-align: center;
+  line-height: 3.5em;
+  letter-spacing: 0.1em;
+}
+
+@media screen and (max-width: 959px) {
+  /* line 856, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+  footer #divSources h5 {
+    text-align: center;
+    line-height: 1.7em;
+    letter-spacing: 0.1em;
+    margin: 1.5em 0;
+  }
+}
+
+/* line 867, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+footer #divSources h5 a {
+  color: Skyblue;
+}
+
+/* line 870, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+footer #divSources h5 a:hover {
+  color: Crimson;
+  font-weight: bold;
+}
+
+/* line 875, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+footer #divSources h5 a:active {
+  color: Maroon;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=main.css.map */

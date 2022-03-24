@@ -1,339 +1,631 @@
-
 @font-face {
-    font-family: 'arialic_hollowregular';
-    src: url('../ArialicHollowRegularFonts/arialic_hollow-webfont.woff2') format('woff2'),
+  font-family: 'arialic_hollowregular';
+  src: url('../ArialicHollowRegularFonts/arialic_hollow-webfont.woff2') format('woff2'),
     url('../ArialicHollowRegularFonts/arialic_hollow-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-weight: normal;
+  font-style: normal;
 }
-
-
 
 @font-face {
-    font-family: 'coolveticaregular';
-    src: url('../coolveticaRegularFonts/coolvetica-webfont.woff2') format('woff2'),
+  font-family: 'coolveticaregular';
+  src: url('../coolveticaRegularFonts/coolvetica-webfont.woff2') format('woff2'),
     url('../coolveticaRegularFonts/coolvetica-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-weight: normal;
+  font-style: normal;
 }
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    text-decoration: none;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
 }
 
-body{
-    /*background-color: pink;*/
+body {
+  /*background-color: pink;*/
 }
 
 /* https://www.youtube.com/watch?v=oYRda7UtuhA
 How To Make Website Using HTML & CSS | Full Responsive Multi Page Website Design Step by Step  */
-
-
 /*provizoriu*/
-
-h3 , h1 , p{
-    text-transform: capitalize;
-    text-align: center;
-    padding: 1em;
+h3, h1, p {
+  text-transform: capitalize;
+  text-align: center;
+  padding: 1em;
 }
 
-h1{
-    font-family: 'arialic_hollowregular';
-    color:Crimson;
-    font-size: 4em;
-    text-shadow: 0.3px 0.3px 3px gray;
+h1 {
+  font-family: 'arialic_hollowregular';
+  color: Crimson;
+  font-size: 4em;
+  text-shadow: 0.3px 0.3px 3px gray;
 }
 
 /* after and after hover effect */
 h1::before,
-h1::after{
-    content: "";
-    display: block;
-    width: 0%;
-    height: 3px;
-    text-shadow: 0.3px 0.3px 3px gray;
-    margin: auto;
-    transition: 1s;
-    background-color: Crimson;
+h1::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 3px;
+  text-shadow: 0.3px 0.3px 3px gray;
+  margin: auto;
+  transition: 1s;
+  background-color: Crimson;
 }
 
 h1:hover::before,
-h1:hover::after{
-    /*width: 1088px;*/
-    width: 100%;
+h1:hover::after {
+  /*width: 1088px;*/
+  width: 100%;
 }
-/*after and after hover effect*/
 
-h3{
-    font-family: 'coolveticaregular';
-    letter-spacing: 0.3em;
-    padding: 1em;
-    font-weight: bold;
+/*after and after hover effect*/
+h3 {
+  font-family: 'coolveticaregular';
+  letter-spacing: 0.3em;
+  padding: 1em;
+  font-weight: bold;
 }
 
 h5 {
-    font-family: 'coolveticaregular';
-}
-p{
-    font-family: 'Fredoka', sans-serif;
-    color: SkyBlue;
+  font-family: 'coolveticaregular';
 }
 
-
-
-
-
+p {
+  font-family: 'Fredoka', sans-serif;
+  color: SkyBlue;
+}
 
 /*header home*/
-.transparency{
-    background-color: #00000066;
-    /*background-image: linear-gradient(to bottom , rgba(50, 82, 3, 0.25), rgba(202, 212, 241, 0.75));*/
-    height: 100vh;
-    width: 100%;
+.transparency {
+  background-color: #00000033;
+  /*background-image: linear-gradient(to bottom , rgba(50, 82, 3, 0.25), rgba(202, 212, 241, 0.75));*/
+  height: 100vh;
+  width: 100%;
 }
 
-
-header#home{
-    height: 100vh;
-    /* background-image: url(../images/Image.jpg); */
-    background-image: url(https://images.unsplash.com/photo-1623387641168-d9803ddd3f35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    box-shadow: 0.5px 0.5px 10px gray;
+header#home {
+  height: 100vh;
+  /* background-image: url(../images/Image.jpg); */
+  background-image: url(https://images.unsplash.com/photo-1623387641168-d9803ddd3f35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0.5px 0.5px 10px gray;
 }
 
-.container{
-    max-width: 1088px;
-    margin: 0 auto;
+.container {
+  max-width: 1088px;
+  margin: 0 auto;
 }
 
 nav {
-    /*background-color: Olive;*/
-    background-color: rgb(128, 128, 0);
+  /*background-color: Olive;*/
+  background-color: rgb(128, 128, 0);
 }
 
-nav div.container{
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    align-items: center;
+nav div.container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
 }
 
-.logo{
-    font-weight: bold;
-    font-size: 2.1em;
-    display: flex;
+.logo {
+  font-weight: bold;
+  font-size: 2.1em;
+  display: flex;
 }
 
-.logoSvg{
-    width: 100px;
-    height: 100px;
-    background-repeat: no-repeat;
-    background-image: url(../images/pet-project-logo-white-01.svg);
-    background-position: center;
-    background-size: cover;
+.logoSvg {
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-image: url(../images/pet-project-logo-white-01.svg);
+  background-position: center;
+  background-size: cover;
 }
-.logoWords{
-    margin-left: -1em;
-    margin-top: 0.6em;
-    width: 50%;
-    text-align: center;
-    font-family: 'coolveticaregular';
+
+.logoWords {
+  margin-left: -1em;
+  margin-top: 0.6em;
+  width: 50%;
+  text-align: center;
+  font-family: 'coolveticaregular';
 }
 
 /*span 1 pet word*/
-.logo span:nth-of-type(1){
-    letter-spacing: 0.3em;
-    color: SkyBlue;
+.logo span:nth-of-type(1) {
+  letter-spacing: 0.3em;
+  color: SkyBlue;
 }
+
 /*span 2 project word*/
-.logo span:nth-of-type(2){
-    color: Crimson;
+.logo span:nth-of-type(2) {
+  color: Crimson;
 }
 
-.menu li{
-    display: flex;
-    height: 80px;
+.menu li {
+  display: flex;
+  height: 80px;
 }
 
-.menu li a{
-    color: white;
-    line-height: 80px;
-    padding: 0 1em;
-    letter-spacing: 0.3em;
-    font-family: 'coolveticaregular';
+.menu li a {
+  color: white;
+  line-height: 80px;
+  padding: 0 1em;
+  letter-spacing: 0.3em;
+  font-family: 'coolveticaregular';
 }
 
-.menu li a:hover{
-    background-color: rgba(255,255,255,0.25);
+.menu li a:hover {
+  background-color: rgba(255, 255, 255, 0.25);
 }
 
-.menu{
-    display: flex;
+.menu {
+  display: flex;
 }
 
-.catSvg{
-    width: 80px;
-    height: 80px;
-    background-repeat: no-repeat;
-    background-image: url(../images/white-cat-01.svg);
-    background-position: center;
-    background-size: cover;
+.catSvg {
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-image: url(../images/white-cat-01.svg);
+  background-position: center;
+  background-size: cover;
 }
 
-.dogSvg{
-    width: 80px;
-    height: 80px;
-    background-repeat: no-repeat;
-    background-image: url(../images/white-dog-01.svg);
-    background-position: center;
-    background-size: cover;
+.dogSvg {
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-image: url(../images/white-dog-01.svg);
+  background-position: center;
+  background-size: cover;
 }
+
 /* media screen for header  */
 @media screen and (max-width: 959px) {
+  header#home {
+    background-image: url(https://images.unsplash.com/photo-1509205477838-a534e43a849f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=878&q=80);
+  }
 
-    header#home{
-        background-image: url(https://images.unsplash.com/photo-1509205477838-a534e43a849f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=878&q=80);
-    }
+  .menu {
+    margin-right: 1.5em;
+  }
 
-    .menu{
-        margin-right: 1.5em;
-    }
-
-    .logo{
-        margin-left: 0;
-        font-weight: bold;
-        font-size: 1.5em;
-    }
-
-    .logoSvg{
-        width: 60px;
-        height: 60px;
-    }
-
-    .logoWords{
-        margin-left: 0;
-        margin-top: 0.5em;
-        width: 25%;
-    }
-
-    .logo span:nth-of-type(1){
-        letter-spacing: 1em;
-    }
-
-    .menu li a{
-        letter-spacing: 0.15em;
-        padding: 0 0.15em;
-    }
-
-    .catSvg{
-        margin-top: 0.5em;
-        width: 60px;
-        height: 60px;
-    }
-
-    .dogSvg{
-        margin-top: 0.5em;
-        width: 60px;
-        height: 60px;
-    }
-    /*only fonts*/
-    h1{
-        font-size: 2em;
-    }
-
-    h1:hover::before,
-    h1:hover::after{
-        width: 100%;
-    }
-
-    h3{
-        letter-spacing: 0.15em;
-    }
-}
-
-/*footer*/
-footer{
-    background-color: Olive;
-}
-
-#aboutFooter{
-    padding-top: 2.5em;
-}
-
-footer #icons{
-    margin-top: 1em;
+  .logo {
+    margin-left: 0;
+    font-weight: bold;
     font-size: 1.5em;
+  }
+
+  .logoSvg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .logoWords {
+    margin-left: 0;
+    margin-top: 0.5em;
+    width: 25%;
+  }
+
+  .logo span:nth-of-type(1) {
+    letter-spacing: 1em;
+  }
+
+  .menu li a {
+    letter-spacing: 0.15em;
+    padding: 0 0.15em;
+  }
+
+  .catSvg {
+    margin-top: 0.5em;
+    width: 60px;
+    height: 60px;
+  }
+
+  .dogSvg {
+    margin-top: 0.5em;
+    width: 60px;
+    height: 60px;
+  }
+
+  /*only fonts*/
+  h1 {
+    font-size: 2em;
+  }
+
+  h1:hover::before,
+  h1:hover::after {
+    width: 100%;
+  }
+
+  h3 {
+    letter-spacing: 0.15em;
+  }
+}
+
+/*header*/
+/*
+How To Make A Website With Background Video Using HTML and CSS In Just 10 Minute
+https://www.youtube.com/watch?v=xekZXhumB0k
+*/
+.hero {
+  height: 100vh;
+  width: 100%;
+  /* border:3px solid red; */
+  background-image: url(../images/cat.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0.5px 0.5px 10px gray;
+  position: relative;
+}
+
+#backVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100%;
+  display: none;
+}
+
+.sidebar-cat-food {
+  width: 15%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.70);
+}
+
+@media screen and (max-width: 959px) {
+  .sidebar-cat-food {
+    display: none;
+  }
+}
+
+.text-box {
+  transform: rotate(-90deg);
+  top: 47%;
+  position: relative;
+  margin-left: -7.5em;
+  width: auto;
+}
+
+.text-box p {
+  position: absolute;
+  color: crimson;
+  font-size: 1.3em;
+  text-shadow: 0.3px 0.3px 5px gray;
+}
+
+.content-header-food-cat {
+  position: absolute;
+  top: 75%;
+  right: 7em;
+  width: 25%;
+  background-color: rgba(255, 255, 255, 0.70);
+  border-radius: 1em;
+}
+
+.content-header-food-cat h3 {
+  color: crimson;
+  font-size: 1em;
+  text-shadow: 0.3px 0.3px 5px gray;
+}
+
+.content-header-food-cat p {
+  color: crimson;
+  font-size: 20px;
+  letter-spacing: 0.3em;
+  text-shadow: 0.5px 0.5px 5px gray;
+}
+
+.btn-cat-video {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.btn-cat-video ion-icon {
+  margin-left: 1.5em;
+  color: skyblue;
+  font-size: 30px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0.5px 0.5px 5px gray;
+}
+
+/*
+SkyBlue
+#87ceeb
+rgb(135, 206, 235)
+hsl(197, 71%, 73%)
+*/
+/*
+Olive
+#808000
+rgb(128, 128, 0)
+hsl(60, 100%, 25%)
+*/
+@media screen and (max-width: 959px) {
+  .content-header-food-cat {
+    background-color: rgba(128, 128, 0, 0.70);
+    width: 50%;
+    right: 25%;
+    top: 80%;
+  }
+
+  .content-header-food-cat h3 {
+    text-shadow: 0.0px 0.0px 0px gray;
+  }
+
+  .content-header-food-cat p {
+    text-shadow: 0.0px 0.0px 0px gray;
+  }
+}
+
+/*
+How To Make A Website With Background Video Using HTML and CSS In Just 10 Minute
+https://www.youtube.com/watch?v=xekZXhumB0k
+*/
+/* photo-index */
+section#cat-food-photo {
+  /* background-color: rgba(220, 20, 60, 0.5); */
+  background-image: linear-gradient(-45deg, crimson, white, skyblue);
+  margin-bottom: 5em;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0.5px 0.5px 10px black;
+}
+
+#photo-index {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.5em 2em;
+  margin: 0 1.5em;
+}
+
+/*
+Crimson
+#dc143c
+rgb(220, 20, 60)
+hsl(348, 83%, 47%)
+*/
+.food-cat {
+  height: 15em;
+  width: 15em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.5em;
+  box-shadow: 0.3px 0.3px 5px black;
+  margin: 0 1.5em;
+  padding: 0 1.5em;
+}
+
+.food-one {
+  background-image: url(../images/cat-index-food-one.jpg);
+}
+
+.food-one:hover {
+  transition: 0.5s;
+  background-image: url(../images/cat-food-hover-one.jpg);
+}
+
+.food-two {
+  background-image: url(../images/cat-index-food-two.jpg);
+}
+
+.food-two:hover {
+  transition: 0.5s;
+  background-image: url(../images/cat-food-hover-two.jpg);
+}
+
+.food-three {
+  background-image: url(../images/cat-index-food-three.jpg);
+}
+
+.food-three:hover {
+  transition: 0.5s;
+  background-image: url(../images/cat-food-hover-three.jpg);
+}
+
+@media screen and (max-width: 959px) {
+  section#cat-food-photo {
+    height: auto;
+  }
+
+  #photo-index {
+    margin: 0 1em;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .food-cat {
+    margin: 1.5em 0;
+  }
 }
 
-footer .footerIcons a{
-    color:Skyblue;
+/* photo-index */
+/*section animated-text-effect*/
+#animated-text-effect {
+  padding: 1.5em 1em;
+  margin-bottom: 1.5em;
+}
+
+#animated-text-effect ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 959px) {
+  #animated-text-effect ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #animated-text-effect ul li {
+    margin: -1.5em 0;
+  }
+}
+
+#animated-text-effect h2 {
+  text-align: center;
+  font-family: 'coolveticaregular';
+  letter-spacing: 0.4em;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: transparent;
+  font-size: 4.5em;
+  font-weight: bold;
+  line-height: 1em;
+  -webkit-text-stroke: 0.5px olive;
+  background: url(../images/crimson-sky-blue-background.svg);
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+}
+
+@keyframes back {
+  100% {
+    background-position: 2000px 0;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  #animated-text-effect h2 {
     font-size: 3em;
+  }
+
+  #animated-text-effect li {
+    padding: 1em 0;
+  }
 }
 
-footer .footerIcons a:hover{
-    color:Crimson;
-    font-weight: bold;
+#animated-text-effect ul li p span {
+  font-size: 3em;
+  color: olive;
+  padding-right: 0.5em;
+  margin-bottom: -1.5em;
+  font-weight: bold;
+  text-shadow: 0.1px 0.1px 1.5px olive;
 }
 
-footer .footerIcons a:active{
-    color:Maroon;
-    font-weight: bold;
+/*arrow key effect*/
+/*arrow key effect*/
+/*section animated-text-effect*/
+/*footer*/
+footer {
+  background-color: Olive;
 }
 
-#divSources h5{
-    text-align: center;
-    line-height: 3.5em;
-    letter-spacing: 0.1em;
+#aboutFooter {
+  padding-top: 2.5em;
 }
 
-#divSources h5 a{
-    color:Skyblue;
+footer #icons {
+  margin-top: 1em;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-#divSources h5 a:hover{
-    color:Crimson;
-    font-weight: bold;
+footer .footerIcons a {
+  color: Skyblue;
+  font-size: 3em;
 }
 
-#divSources h5 a:active{
-    color:Maroon;
-    font-weight: bold;
+footer .footerIcons a:hover {
+  color: Crimson;
+  font-weight: bold;
+}
+
+footer .footerIcons a:active {
+  color: Maroon;
+  font-weight: bold;
+}
+
+#divSources h5 {
+  text-align: center;
+  line-height: 3.5em;
+  letter-spacing: 0.1em;
+}
+
+#divSources h5 a {
+  color: Skyblue;
+}
+
+#divSources h5 a:hover {
+  color: Crimson;
+  font-weight: bold;
+}
+
+#divSources h5 a:active {
+  color: Maroon;
+  font-weight: bold;
 }
 
 /* media screen for footer  */
 @media screen and (max-width: 959px) {
+  #divSources h5 {
+    text-align: center;
+    line-height: 1.7em;
+    letter-spacing: 0.1em;
+    margin: 1.5em 0;
+  }
 
-    #divSources h5{
-        text-align: center;
-        line-height: 1.7em;
-        letter-spacing: 0.1em;
-        margin: 1.5em 0;
-    }
+  footer #icons {
+    font-size: 1em;
+    display: block;
+    text-align: center;
+  }
 
-    footer #icons{
-        font-size: 1em;
-        display: block;
-        text-align: center;
-    }
+  footer #icons div {
+    padding: 0.7em 0;
+  }
+}
 
+/*footer h3 about us */
+#aboutFooter {
+  padding-top: 5em;
+  padding-bottom: 3em;
+}
 
-    footer #icons div{
-        padding: 0.7em 0;
-    }
+footer h3#aboutFooter a {
+  color: olive;
+  /*background-color: white;*/
+  background-color: rgba(255, 255, 255, 0.75);
+  border: 3px solid skyblue;
+  border-radius: 1em;
+  padding: 0.7em 1.3em;
+  letter-spacing: 0.3em;
+  box-shadow: 1px 1px 5px darkslategray;
+}
+
+footer h3#aboutFooter a:hover {
+  color: crimson;
+}
+
+footer h3#aboutFooter a:active {
+  color: maroon;
 }
 
 /*https://www.youtube.com/watch?v=ZeMMvgCR7aU*/
 /*Navigation: linking multiple pages*/
-
