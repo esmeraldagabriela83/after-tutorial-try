@@ -1,49 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <title>PRODUCTS Page</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500&display=swap" rel="stylesheet">
-    <!--google fonts-->
 
-    <!--ion icons-->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <!--ion icons-->
+<head>
+  <meta charset="UTF-8">
+  <title>PRODUCTS Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500&display=swap" rel="stylesheet">
+  <!--google fonts-->
 
-      <link href="../css/productsStyle.css" rel="stylesheet"/>
+  <!--ion icons-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!--ion icons-->
 
-  </head>
-  <body>
-<!--header-->
-    <header id="productsPageHeader">
-      <div class="transparencyproductPage">
-    <nav>
-      <div class="container">
-        <a href="../index.html" class="logo">
-          <div class="logoSvg"></div>
-          <div class="logoWords">
-            <span>PET</span>
-            <span>PROJECT</span>
-          </div>
-        </a>
-        <ul class="menu">
-          <li> <a href="../index.html">HOME</a></li>
-          <li> <a href="../catIndex.html"><div class="catSvg"></div></a></li>
-          <li> <a href="../dogIndex.html"><div class="dogSvg"></div></a></li>
-<!--          <li> <a href="products/">PRODUCTS</a></li>-->
-          <li> <a href="index.html">PRODUCTS</a></li>
-        </ul>
+  <link href="../css/productsStyle.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <!--header-->
+  <header id="productsPageHeader">
+    <div class="transparencyproductPage">
+      <nav>
+        <div class="container">
+          <a href="../index.html" class="logo">
+            <div class="logoSvg"></div>
+            <div class="logoWords">
+              <span>PET</span>
+              <span>PROJECT</span>
+            </div>
+          </a>
+          <ul class="menu">
+            <li> <a href="../index.html">HOME</a></li>
+            <li> <a href="../catIndex.html">
+                <div class="catSvg"></div>
+              </a></li>
+            <li> <a href="../dogIndex.html">
+                <div class="dogSvg"></div>
+              </a></li>
+            <!--          <li> <a href="products/">PRODUCTS</a></li>-->
+            <li> <a href="index.html">PRODUCTS</a></li>
+          </ul>
         </div>
-    </nav>
-        <section class="container hero">
-        <form action="https://www.google.com/search"
-              method="get"
-              class="search-bar">
+      </nav>
+      <section class="container hero">
+        <form action="https://www.google.com/search" method="get" class="search-bar">
 
           <input type="text" placeholder="Search Anything" name="products page">
           <button type="submit">
@@ -51,226 +55,304 @@
           </button>
 
         </form>
-        </section>
+      </section>
+    </div>
+  </header>
+
+  <!--content-->
+  <main class="container">
+    <h1 id="products">look for products</h1>
+    <section id="textPhotoProducts" class="container">
+
+      <div class="textPhoto catProducts">
+        <div id="photoProductsCat"></div>
+        <h3><a href="catFood.html" class="productLink titleCat">cat food</a></h3>
+        <p id="paragraphCatProducts" class="paragraphAnimalProducts">
+          It is a long established fact that a reader will be distracted by the readable
+          content of a page when looking at its layout. <br />
+          The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+          as opposed to using 'Content here, content here', making it look like readable English.<br />
+          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,
+          by injected humour, or randomised words which don't look even slightly believable.<br />
+          It is a long established fact that a reader will be distracted
+          by the readable content of a page when looking at its layout.
+        </p>
       </div>
-    </header>
 
-<!--content-->
-    <main class="container">
-        <h1 id="products">look for products</h1>
-        <section id="textPhotoProducts" class="container">
+      <div class="textPhoto dogProducts">
+        <div id="photoProductsDog"></div>
+        <h3><a href="dogFood.html" class="productLink titleDog">dog food</a></h3>
+        <p id="paragraphDogProducts" class="paragraphAnimalProducts">
+          The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+          as opposed to using 'Content here, content here', making it look like readable English.
+          It is a long established fact that a reader will be distracted by the readable
+          content of a page when looking at its layout.<br />
+          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,
+          by injected humour, or randomised words which don't look even slightly believable.
+        </p>
+      </div>
 
-            <div class="textPhoto catProducts">
-                <div id="photoProductsCat"></div>
-                <h3><a href="catFood.html" class="productLink titleCat">cat food</a></h3>
-                    <p id="paragraphCatProducts" class="paragraphAnimalProducts">
-                        It is a long established fact that a reader will be distracted by the readable
-                        content of a page when looking at its layout. <br/>
-                        The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-                        as opposed to using 'Content here, content here', making it look like readable English.<br/>
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,
-                        by injected humour, or randomised words which don't look even slightly believable.<br/>
-                        It is a long established fact that a reader will be distracted
-                        by the readable content of a page when looking at its layout.
-                    </p>
-            </div>
+    </section>
 
-            <div class="textPhoto dogProducts">
-                <div id="photoProductsDog"></div>
-                <h3><a href="dogFood.html" class="productLink titleDog">dog food</a></h3>
-                <p id="paragraphDogProducts" class="paragraphAnimalProducts">
-                    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-                    as opposed to using 'Content here, content here', making it look like readable English.
-                    It is a long established fact that a reader will be distracted by the readable
-                    content of a page when looking at its layout.<br/>
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,
-                    by injected humour, or randomised words which don't look even slightly believable.
-                </p>
-            </div>
-
-        </section>
-
-    </main>
+  </main>
 
 
-<!--content section products page-->
+  <!--content section products page-->
 
-<section class="animalLovers container">
+  <section class="animalLovers container">
 
     <h1>just for animal lovers</h1>
 
     <p id="paragraphProductsAnimalLovers">
-        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+      There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
     </p>
 
     <div class="rowProducts">
 
-        <div class="colProducts">
-            <div class="productsPetPhoto catLover"></div>
-            <div class="layer">
-                <h3>cat</h3>
-            </div>
+      <div class="colProducts">
+        <div class="productsPetPhoto catLover"></div>
+        <div class="layer">
+          <h3>cat</h3>
         </div>
+      </div>
 
-        <div class="colProducts">
-            <div class="productsPetPhoto petLover"></div>
-            <div class="layer">
-                <h3>pet</h3>
-            </div>
+      <div class="colProducts">
+        <div class="productsPetPhoto petLover"></div>
+        <div class="layer">
+          <h3>pet</h3>
         </div>
+      </div>
 
-        <div class="colProducts">
-            <div class="productsPetPhoto dogLover"></div>
-            <div class="layer">
-                <h3>dog</h3>
-            </div>
+      <div class="colProducts">
+        <div class="productsPetPhoto dogLover"></div>
+        <div class="layer">
+          <h3>dog</h3>
         </div>
+      </div>
 
     </div>
 
-</section>
-
-<section class="container javascript">
-<div id="catApp">my content is overwritten from the productsJavascript.js file</div>
-</section>
+  </section>
 
 
-<section class="container">
-  <h1>everyone matters</h1>
-<div id="you-tube-links">
-  <div class="border-one"><a class="productLink" href="https://www.youtube.com/watch?v=Fff5L1ijJS0" title="Cats from You Tube" target="_blank">
-        <strong>Help Cats</strong>
-      </a></div>
-      <div class="border-one"><a class="productLink"  href="https://www.youtube.com/watch?v=eR7NuQ1jSc8" title="Pets from You Tube" target="_blank">
-            <strong>Help Pets</strong>
-          </a></div>
-      <div class="border-one"><a class="productLink"  href="https://www.youtube.com/watch?v=1wDCJ9fZHPo" title="Dogs from You Tube" target="_blank">
-            <strong>Help Dogs</strong>
-          </a></div>
-</div>
-</section>
+  <section class="container">
+    <h1>everyone matters</h1>
+    <div id="you-tube-links">
+      <div class="border-one"><a class="productLink" href="https://www.youtube.com/watch?v=Fff5L1ijJS0" title="Cats from You Tube" target="_blank">
+          <strong>Help Cats</strong>
+        </a></div>
+      <div class="border-one"><a class="productLink" href="https://www.youtube.com/watch?v=eR7NuQ1jSc8" title="Pets from You Tube" target="_blank">
+          <strong>Help Pets</strong>
+        </a></div>
+      <div class="border-one"><a class="productLink" href="https://www.youtube.com/watch?v=1wDCJ9fZHPo" title="Dogs from You Tube" target="_blank">
+          <strong>Help Dogs</strong>
+        </a></div>
+    </div>
+  </section>
+
+
+  <section class="container javascript">
+    <div id="catApp">my content is overwritten from the productsJavascript.js file</div>
+  </section>
+
+  <h1 id="h1style" class="container">portal for animal lovers</h1>
+
+  <section class="container javascriptPhotos">
+
+    <article>
+
+      <a href="#" title="show and hide cat" class="btn-click"></a>
+      <div class="hide">
+        <h3>cat</h3>
+        <div class="center-image"><img id="cat-pic" src="../images/catShow.jpg" alt="catShow-javascript"></div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing
+          elit. Aenean commodo ligula eget dolor. Aenean massa.
+          Cum sociis natoque penatibus et magnis dis parturient
+          montes, nascetur ridiculus mus. Donec quam felis,
+          ultricies nec, pellentesque eu, pretium quis, sem.
+        </p>
+      </div>
+    </article>
+
+    <article>
+
+      <a href="#" title="show and hide pet" class="btn-click"></a>
+      <div class="hide">
+        <h3>pet</h3>
+            <div class="center-image"><img id="pet-pic" src="../images/petShow.jpg" alt="petShow-javascript"></div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing
+          elit. Aenean commodo ligula eget dolor. Aenean massa.
+          Cum sociis natoque penatibus et magnis dis parturient
+          montes, nascetur ridiculus mus. Donec quam felis,
+          ultricies nec, pellentesque eu, pretium quis, sem.
+        </p>
+      </div>
+    </article>
+
+    <article>
+
+      <a href="#" title="show and hide dog" class="btn-click"></a>
+      <div class="hide">
+        <h3>dog</h3>
+          <div class="center-image"><img id="dog-pic" src="../images/dogShow.jpg" alt="dogShow-javascript"></div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing
+          elit. Aenean commodo ligula eget dolor. Aenean massa.
+          Cum sociis natoque penatibus et magnis dis parturient
+          montes, nascetur ridiculus mus. Donec quam felis,
+          ultricies nec, pellentesque eu, pretium quis, sem.
+        </p>
+      </div>
+    </article>
+
+  </section>
+
 
   <!--footer-->
 
-<footer>
-  <div class="container">
-<!--    <h3 id="aboutFooter">about us</h3>-->
+  <footer>
+    <div class="container">
+      <!--    <h3 id="aboutFooter">about us</h3>-->
       <h3 id="aboutFooter">
-          <a href="../about-us/index.html">About us</a>
+        <a href="../about-us/index.html">About us</a>
       </h3>
-    <p>
-      Contrary to popular belief, Lorem Ipsum is not simply random text.
-      It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. <br/>
-      Richard McClintock,
-      a Latin professor at Hampden-Sydney College in Virginia.
-    </p>
-    <div id="icons">
-      <div class="footerIcons"><a href="https://facebook.com/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></div>
-      <div class="footerIcons"><a href="https://instagram.com/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></div>
-      <div class="footerIcons"><a href="https://twitter.com/" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></div>
-    </div>
+      <p>
+        Contrary to popular belief, Lorem Ipsum is not simply random text.
+        It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. <br />
+        Richard McClintock,
+        a Latin professor at Hampden-Sydney College in Virginia.
+      </p>
+      <div id="icons">
+        <div class="footerIcons"><a href="https://facebook.com/" target="_blank">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a></div>
+        <div class="footerIcons"><a href="https://instagram.com/" target="_blank">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a></div>
+        <div class="footerIcons"><a href="https://twitter.com/" target="_blank">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a></div>
+      </div>
 
-    <!--sources links-->
-    <h3 style="color:white">sources</h3>
-    <div id="divSources">
-      <h5><a href="https://images.unsplash.com/photo-1450778869180-41d0601e046e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1286&q=80"
-             target="_blank">
-        https://images.unsplash.com/photo
-          -1450778869180-41d0601e046e?ixlib=rb-
-          1.2.1&ixid=MnwxMjA3fDB8MHxwaG90
-          by1wYWdlfHx8fGVufDB8fHx8&auto=
-          format&fit=crop&w=1286&q=80
-      </a></h5>
+      <!--sources links-->
+      <a href="#" title="show and hide source links" class="btn_show_hide"><h3>sources</h3></a>
+      <div id="divSources" class="hidden">
 
-        <h5><a href="https://images.unsplash.com/photo-1574158622682-e40e69881006?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
-               target="_blank">
+        <h5><a href="https://images.unsplash.com/photo-1450778869180-41d0601e046e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1286&q=80" target="_blank">
+            https://images.unsplash.com/photo
+            -1450778869180-41d0601e046e?ixlib=rb-
+            1.2.1&ixid=MnwxMjA3fDB8MHxwaG90
+            by1wYWdlfHx8fGVufDB8fHx8&auto=
+            format&fit=crop&w=1286&q=80
+          </a></h5>
+
+        <h5><a href="https://images.unsplash.com/photo-1574158622682-e40e69881006?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" target="_blank">
             https://images.unsplash.com/photo
             -1574158622682-e40e69881006?ixlib=
             rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90
             by1wYWdlfHx8fGVufDB8fHx8&auto=
             format&fit=crop&w=880&q=80
-        </a></h5>
+          </a></h5>
 
-        <h5><a href="https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80"
-               target="_blank">
+        <h5><a href="https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80" target="_blank">
             https://images.unsplash.com/photo
             -1530281700549-e82e7bf110d6?ixlib
             =rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90
             by1wYWdlfHx8fGVufDB8fHx8&auto=
             format&fit=crop&w=688&q=80
-        </a></h5>
+          </a></h5>
 
-        <h5><a href="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1143&q=80"
-               target="_blank">
+        <h5><a href="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1143&q=80" target="_blank">
             https://images.unsplash.com/photo
             -1514888286974-6c03e2ca1dba?ixlib
             =rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90
             by1wYWdlfHx8fGVufDB8fHx8&auto=
             format&fit=crop&w=1143&q=80
-        </a></h5>
+          </a></h5>
 
-        <h5><a href="https://images.unsplash.com/photo-1545529468-42764ef8c85f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80"
-               target="_blank">
+        <h5><a href="https://images.unsplash.com/photo-1545529468-42764ef8c85f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80" target="_blank">
             https://images.unsplash.com/photo
             -1545529468-42764ef8c85f?ixlib=rb
             -1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by
             1wYWdlfHx8fGVufDB8fHx8&auto=
             format&fit=crop&w=1173&q=80
-        </a></h5>
+          </a></h5>
 
-        <h5><a href="https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-               target="_blank">
+        <h5><a href="https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" target="_blank">
             https://images.unsplash.com/photo
             -1541364983171-a8ba01e95cfc?ixlib=
             rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90
             by1wYWdlfHx8fGVufDB8fHx8&auto=
             format&fit=crop&w=687&q=80
-        </a></h5>
+          </a></h5>
 
-        <h5><a href="https://images.unsplash.com/photo-1598188306155-25e400eb5078?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-               target="_blank">
-               https://images.unsplash.com/photo
-               -1598188306155-25e400eb5078?ixlib=
-               rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90
-               by1wYWdlfHx8fGVufDB8fHx8&auto=
-               format&fit=crop&w=1074&q=80
-        </a></h5>
+        <h5><a href="https://images.unsplash.com/photo-1598188306155-25e400eb5078?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" target="_blank">
+            https://images.unsplash.com/photo
+            -1598188306155-25e400eb5078?ixlib=
+            rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90
+            by1wYWdlfHx8fGVufDB8fHx8&auto=
+            format&fit=crop&w=1074&q=80
+          </a></h5>
 
-        <h5><a href="https://images.unsplash.com/photo-1551189013-03cf5bc1c73c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1206&q=80"
-               target="_blank">
-               https://images.unsplash.com/photo
-               -1551189013-03cf5bc1c73c?ixlib=
-               rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90
-               by1wYWdlfHx8fGVufDB8fHx8&auto=
-               format&fit=crop&w=1206&q=80
-        </a></h5>
+        <h5><a href="https://images.unsplash.com/photo-1551189013-03cf5bc1c73c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1206&q=80" target="_blank">
+            https://images.unsplash.com/photo
+            -1551189013-03cf5bc1c73c?ixlib=
+            rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90
+            by1wYWdlfHx8fGVufDB8fHx8&auto=
+            format&fit=crop&w=1206&q=80
+          </a></h5>
 
-        <h5><a href="https://images.unsplash.com/photo-1597633425046-08f5110420b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-               target="_blank">
-               https://images.unsplash.com/photo
-               -1597633425046-08f5110420b5?ixlib=
-               rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90
-               by1wYWdlfHx8fGVufDB8fHx8&auto=
-               format&fit=crop&w=1170&q=80
-        </a></h5>
+        <h5><a href="https://images.unsplash.com/photo-1597633425046-08f5110420b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" target="_blank">
+            https://images.unsplash.com/photo
+            -1597633425046-08f5110420b5?ixlib=
+            rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90
+            by1wYWdlfHx8fGVufDB8fHx8&auto=
+            format&fit=crop&w=1170&q=80
+          </a></h5>
 
-      <h5><a href="https://www.youtube.com/watch?v=9hnJsNIBq1g"
-             target="_blank">
-        https://www.youtube.com/
-          watch?v=9hnJsNIBq1g
-      </a></h5>
+        <h5><a href="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80" target="_blank">
+            https://images.unsplash.com/photo-
+            1495360010541-f48722b34f7d?ixlib=
+            rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by
+            1wYWdlfHx8fGVufDB8fHx8&auto=
+            format&fit=crop&w=736&q=80
+          </a></h5>
 
-      <h5><a href="https://www.youtube.com/watch?v=DG4obitDvUA"
-             target="_blank">
-        https://www.youtube.com/watch?v=DG4obitDvUA
-      </a></h5>
+        <h5><a href="https://images.unsplash.com/photo-1415369629372-26f2fe60c467?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" target="_blank">
+            https://images.unsplash.com/photo
+            -1415369629372-26f2fe60c467?ixlib=
+            rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by
+            1wYWdlfHx8fGVufDB8fHx8&auto=
+            format&fit=crop&w=687&q=80
+          </a></h5>
 
+        <h5><a href="https://images.unsplash.com/photo-1532202802379-df93d543bac3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" target="_blank">
+            https://images.unsplash.com/photo
+            -1532202802379-df93d543bac3?ixlib=
+            rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by
+            1wYWdlfHx8fGVufDB8fHx8&auto=
+            format&fit=crop&w=687&q=80
+          </a></h5>
+
+        <h5><a href="https://www.youtube.com/watch?v=9hnJsNIBq1g" target="_blank">
+            https://www.youtube.com/
+            watch?v=9hnJsNIBq1g
+          </a></h5>
+
+        <h5><a href="https://www.youtube.com/watch?v=DG4obitDvUA" target="_blank">
+            https://www.youtube.com/watch?v=DG4obitDvUA
+          </a></h5>
+
+
+      </div>
     </div>
-  </div>
-  <!--footer-->
-</footer>
-<!--script for js-->
-<script src="../js/productsJavascript.js"></script>
+    <!--footer-->
+  </footer>
+  <!--script for js-->
+  <script src="../js/productsJavascript.js"></script>
 
-  </body>
+</body>
+
 </html>

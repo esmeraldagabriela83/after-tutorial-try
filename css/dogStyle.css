@@ -541,6 +541,17 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_navbar_sticky
 /* grid w 3 school*/
 
 /*footer*/
+
+.hidden{
+  display:none;
+}
+footer a h3{
+  color:white;
+}
+footer a h3:hover{
+  color:crimson;
+}
+
 footer {
   background-color: Olive;
 }

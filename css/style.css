@@ -516,6 +516,17 @@ hsl(197, 71%, 73%)*/
 
 /*testimonials   content*/
 /*footer*/
+
+.hidden{
+  display:none;
+}
+footer a h3{
+  color:white;
+}
+footer a h3:hover{
+  color:crimson;
+}
+
 footer {
   background-color: Olive;
 }

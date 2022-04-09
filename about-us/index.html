@@ -228,8 +228,8 @@ https://www.w3schools.com/howto/howto_css_flip_image.asp
     <div class="container">
 
       <!--sources links-->
-      <h3 style="color:white">sources</h3>
-      <div id="divSources">
+      <a href="#" title="show and hide source links" class="btn_show_hide"><h3>sources</h3></a>
+      <div id="divSources" class="hidden">
 
         <h5><a
             href="https://img.freepik.com/free-photo/adorable-kittens-with-fuzzy-hair-sitting-white-surface-with-two-guinea-pigs_181624-43705.jpg?t=st=1647260946~exp=1647261546~hmac=a16ed5c754d457e108e423b402effa41cde17387c5a0e5881a6761db08603872&w=1380"
@@ -303,8 +303,23 @@ https://www.w3schools.com/howto/howto_css_flip_image.asp
     <!--footer-->
   </footer>
 
-
-
 </body>
+
+<script>
+///////////////to show and hide sources links
+
+var sourceLink=document.querySelector(".btn_show_hide");
+
+var showHide=function(event){
+    event.preventDefault();
+  this.nextElementSibling.classList.toggle("hidden");
+  console.log("next element is : " , this.nextElementSibling);
+}
+
+sourceLink.addEventListener("click" , showHide);
+console.log("sourceLink is : " , sourceLink);
+
+/////////////
+</script>
 
 </html>

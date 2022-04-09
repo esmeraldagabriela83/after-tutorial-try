@@ -112,10 +112,35 @@ ${petsData.map(petTemplate).join("")}
 
 `;
 
-
-
 //${petsData}//[object Object],[object Object],[object Object]
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
+var openArticle=document.querySelectorAll(".btn-click");
+console.log("openArticle" , openArticle);//NodeList(3) [a.btn-click, a.btn-click, a.btn-click]
 
-///////////////
+for(i=0 ; i<openArticle.length ; i++){
+openArticle[i].innerText="Click to see more";
+
+  var clickFunctionShowHide=function(event){
+    this.nextElementSibling.classList.toggle("hide");
+    event.preventDefault();
+  }
+  openArticle[i].addEventListener("click" , clickFunctionShowHide);
+
+}
+
+///////////////to show and hide sources links
+
+var sourceLink=document.querySelector(".btn_show_hide");
+
+var showHide=function(event){
+    event.preventDefault();
+  this.nextElementSibling.classList.toggle("hidden");
+  console.log("next element is : " , this.nextElementSibling);
+}
+
+sourceLink.addEventListener("click" , showHide);
+console.log("sourceLink is : " , sourceLink);
+
+/////////////

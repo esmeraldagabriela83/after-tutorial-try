@@ -164,8 +164,8 @@
       </div>
 
       <!--sources links-->
-      <h3 style="color:white">sources</h3>
-      <div id="divSources">
+        <a href="#" title="show and hide source links" class="btn_show_hide"><h3>sources</h3></a>
+      <div id="divSources" class="hidden">
         <h5><a href="https://images.unsplash.com/photo-1547407139-3c921a66005c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" target="_blank">
             https://images.unsplash.com/photo
             -1547407139-3c921a66005c?ixlib=
@@ -204,5 +204,22 @@
   </footer>
 
 </body>
+
+<script>
+///////////////to show and hide sources links
+
+var sourceLink=document.querySelector(".btn_show_hide");
+
+var showHide=function(event){
+    event.preventDefault();
+  this.nextElementSibling.classList.toggle("hidden");
+  console.log("next element is : " , this.nextElementSibling);
+}
+
+sourceLink.addEventListener("click" , showHide);
+console.log("sourceLink is : " , sourceLink);
+
+/////////////
+</script>
 
 </html>

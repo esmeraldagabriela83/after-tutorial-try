@@ -1250,4 +1250,16 @@ footer #divSources h5 a:active {
   font-weight: bold;
 }
 
+/*added directly in main.css*/
+
+.hidden{
+  display:none;
+}
+footer a h3{
+  color:white;
+}
+footer a h3:hover{
+  color:crimson;
+}
+
 /*# sourceMappingURL=main.css.map */

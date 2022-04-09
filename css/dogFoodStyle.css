@@ -438,6 +438,11 @@ h1#first-title {
   margin: 0 1.5em;
   padding: 0 1.5em;
 }
+.olive-shadow:hover{
+  transition:0.3s;
+  background-color: crimson;
+}
+
 
 /*black dog*/
 .black-dog {
@@ -498,6 +503,10 @@ h1#first-title {
   margin: 0 1.5em;
   padding: 0 1.5em;
 }
+.olive-shadow-black:hover{
+  transition:0.3s;
+  background-color: crimson;
+}
 
 /*z index for mobile*/
 @media screen and (max-width: 800px) {
@@ -520,7 +529,7 @@ h1#first-title {
   left: calc(50% - 10.5em);
   top: calc(50% - 10.5em);
   z-index: 3;
-  /* border:3px solid red; */
+/* border:3px solid red;  */
   background-image: url(../images/dog-food.jpg);
   transition: 0.5s;
   height: 15em;
@@ -541,7 +550,7 @@ h1#first-title {
   left: calc(50% - 7.5em);
   top: calc(50% - 7.5em);
   z-index: 2;
-  /* border:3px solid red; */
+   /* border:3px solid red;  */
   background-color: white;
   height: 15em;
   width: 15em;
@@ -567,7 +576,7 @@ h1#first-title {
   left: calc(50% - 4.5em);
   top: calc(50% - 4.5em);
   z-index: 1;
-  /* border:3px solid red; */
+  /* border:3px solid red;  */
   background-color: olive;
   height: 15em;
   width: 15em;
@@ -576,6 +585,11 @@ h1#first-title {
   margin: 0 1.5em;
   padding: 0 1.5em;
 }
+.olive-shadow-food:hover{
+  background-color: crimson;
+  transition:0.3s;
+}
+
 
 /*https://www.w3schools.com/cssref/tryit.asp?filename=trycss_zindex*/
 /*content*/
@@ -647,6 +661,17 @@ h1#first-title {
 
 /*before-svg-effect section*/
 /*footer*/
+
+.hidden{
+  display:none;
+}
+footer a h3{
+  color:white;
+}
+footer a h3:hover{
+  color:crimson;
+}
+
 footer {
   background-color: Olive;
 }

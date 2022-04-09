@@ -149,8 +149,8 @@
       </div>
 
       <!--sources links-->
-      <h3 style="color:white">sources</h3>
-      <div id="divSources">
+    <a href="#" title="show and hide source links" class="btn_show_hide"><h3>sources</h3></a>
+      <div id="divSources" class="hidden">
 
         <h5><a href="https://www.pexels.com/video/video-of-a-tabby-cat-854982/" target="_blank">
             https://www.pexels.com/
@@ -233,6 +233,24 @@
 
     }
   </script>
+
+<script>
+///////////////to show and hide sources links
+
+var sourceLink=document.querySelector(".btn_show_hide");
+
+var showHide=function(event){
+    event.preventDefault();
+  this.nextElementSibling.classList.toggle("hidden");
+  console.log("next element is : " , this.nextElementSibling);
+}
+
+sourceLink.addEventListener("click" , showHide);
+console.log("sourceLink is : " , sourceLink);
+
+/////////////
+</script>
+
 </body>
 
 </html>
