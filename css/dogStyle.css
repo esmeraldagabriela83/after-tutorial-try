@@ -540,6 +540,36 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_navbar_sticky
 
 /* grid w 3 school*/
 
+/*async //fetch function*/
+
+#breed{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5em;
+}
+
+#breed #slideshow{
+  margin-bottom: 1.5em;
+}
+
+.slide{
+  /* border:3px solid indigo; */
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  width: 30em;
+  height: 20em;
+  border-radius: 0.5em;
+  box-shadow: 0.3px 0.3px 3px black;
+}
+
+.select-option{
+  margin-bottom: 1.5em;
+}
+
+/*async //fetch function*/
+
 /*footer*/
 
 .hidden{
@@ -647,6 +677,8 @@ footer h3#aboutFooter a:hover {
 footer h3#aboutFooter a:active {
   color: maroon;
 }
+
+
 
 /*https://www.youtube.com/watch?v=ZeMMvgCR7aU*/
 /*Navigation: linking multiple pages*/
