@@ -1250,16 +1250,23 @@ footer #divSources h5 a:active {
   font-weight: bold;
 }
 
-/*added directly in main.css*/
+/*-------------------------------------------------------------------------*/
+/* line 887, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+.content p.changedColor_paragraph {
+  color: crimson;
+  font-weight: 500;
+}
 
-.hidden{
-  display:none;
+/* line 892, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+.content p.oliveColored_paragraph {
+  color: olive;
+  font-weight: 500;
 }
-footer a h3{
-  color:white;
-}
-footer a h3:hover{
-  color:crimson;
+
+/* line 897, ../AlgoritmCatalin_curs1/After-Tutorial-myTry/after-tutorial-try/about-us/scss/main.scss */
+.content p.deepSkyBlueColored_paragraph {
+  color: deepskyblue;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=main.css.map */

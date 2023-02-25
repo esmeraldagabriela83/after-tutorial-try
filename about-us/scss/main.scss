@@ -879,3 +879,23 @@ footer {
     }
   }
 }
+
+
+/*-------------------------------------------------------------------------*/
+
+.content{
+  p.changedColor_paragraph{
+    color:crimson;
+    font-weight: 500;
+  }
+
+  p.oliveColored_paragraph{
+    color:olive;
+    font-weight: 500;
+  }
+
+  p.deepSkyBlueColored_paragraph{
+    color:deepskyblue;
+    font-weight: 500;
+  }
+}
